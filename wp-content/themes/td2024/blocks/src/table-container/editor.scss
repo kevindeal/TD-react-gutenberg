@@ -1,0 +1,93 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-td-tutorial-cards-block {
+	border: 2px dotted #060;
+}
+
+.td-table th{
+	border: solid 1px #131023;
+	border-right: none;
+}
+.td-table th:first-child, .td-table.headerless tr:first-child td:first-child{
+	border-top-left-radius: 20px;
+}
+.td-table th:last-child{
+	border-top-right-radius: 20px;
+	border-right: solid 1px #131023;
+}
+
+.td-table td{
+	border: solid 1px #131023;
+	border-top: none;
+	border-right: none;
+}
+.td-table td:last-child {
+	border-right: solid 1px #131023;
+}
+
+.td-table tr:last-child td:first-child {
+	border-bottom-left-radius: 20px;
+}
+.td-table tr:last-child td:last-child {
+	border-bottom-right-radius: 20px;
+}
+
+.td-table.table-dark th{
+	border: solid 1px #FFF;
+}
+.td-table.table-dark th:last-child{
+	border-right: solid 1px #FFF;
+}
+.td-table.table-dark td{
+	border: solid 1px #FFF;
+	border-top: none;
+	border-right: none;
+}
+.td-table.table-dark td:last-child {
+	border-right: solid 1px #FFF;
+}
+
+.td-table.borderless, .td-table.borderless tr, .td-table.borderless tr th, .td-table.borderless tr td  {
+	border: none !important; 
+}
+
+.td-table.colored th, .td-table.table-dark.colored th{
+	border: solid 1px #3A61FF;
+	background-color: #3A61FF;
+	color: #FFF;
+}
+.td-table.colored th:last-child, .td-table.table-dark.colored th:last-child{
+	border-right: solid 1px #3A61FF;
+}
+.td-table.colored td, .td-table.table-dark.colored td{
+	border: solid 1px #3A61FF;
+	border-top: none;
+	border-right: none;
+}
+.td-table.colored td:last-child, .td-table.table-dark.colored td:last-child {
+	border-right: solid 1px #3A61FF;
+}
+
+.td-table.colored td:first-child, .td-table.table-dark.table-colored td:first-child {
+	background-color: #F4F5F7;
+	color : #131023;
+}
+.td-table.headerless tr:first-child td{
+	border-top: solid 1px #131023;
+}
+.td-table.headerless.colored tr:first-child td, .td-table.headerless.colored.table-dark tr:first-child td{
+	border-color: #3A61FF;
+}
+.td-table.headerless.table-dark tr:first-child td{
+	border-color: #FFF;
+}
+
+.td-table.headerless tr:first-child td:last-child{
+	border-top-right-radius: 20px;
+}
+
+

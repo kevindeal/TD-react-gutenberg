@@ -1,0 +1,94 @@
+.customSelect {
+    position: relative;
+}
+.customSelect label {
+  display: block;
+  padding: 0.7rem 0.8rem;
+  width: 65%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 0.75rem;
+}
+.customSelect select,
+.customSelect button,
+.customSelect ul {
+  display: block;
+  padding: 0.7rem 0.8rem;
+  margin: 0 auto;
+  text-align: left;
+  background: white;
+  width: 100%;
+  padding: 17px 40px 17px 13px;
+}
+.customSelect button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.customSelect button::before {
+    content: "";
+    vertical-align: middle;
+    position: absolute;
+    right: 1rem;
+    
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg) translate(-4px);
+    -webkit-transform: rotate(45deg) translate(-4px);
+}
+
+.customSelect button:focus-visible,
+#resource-search:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 1px #FFF inset, 0 0 0 2px rgba(58, 97, 255, 1) inset;
+}
+
+.customSelect ul {
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 8px;
+    margin-top: -7px;
+    opacity: 0;
+    transform-origin: top left;
+    transition: all 0.3s ease-in;
+    pointer-events: none;
+    z-index: 1;
+}
+.customSelect ul.active {
+  opacity: 1;
+  transform: scale(1, 1);
+  pointer-events: auto;
+  z-index: 999;
+}
+.customSelect ul li {
+  padding: 12px 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.customSelect ul li.current {
+  color: #3A61FF;
+}
+.customSelect ul li:hover {
+    color: #3A61FF;
+}
+.customSelect ul li.active {
+    color: #3A61FF;
+}
+
+.filter-sort-row {
+  position: relative;
+  z-index: 3;
+}
+.sub_nav_slider{
+  scrollbar-width: none;
+}

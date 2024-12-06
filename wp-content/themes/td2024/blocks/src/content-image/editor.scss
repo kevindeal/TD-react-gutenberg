@@ -1,0 +1,13 @@
+
+*[data-type="td/content-section"] {
+    .wp-block-image {
+        display: flex;
+    }
+    .components-resizable-box__container {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        max-height: none !important;
+        min-height: 0 !important;
+        height: auto !important;
+    }
+}

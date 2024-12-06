@@ -1,0 +1,62 @@
+.subnav-scroll-right-wrapper {
+  height: 82px;
+  width: 40px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  cursor: pointer;
+}
+.subnav-scroll-right-wrapper.scroll-dark {
+  background-color: #131023;
+  color: #fff;
+}
+@media screen and (min-width: 1280px) {
+  .subnav-scroll-right-wrapper.scroll-dark.scroll-gradient {
+    background-image: linear-gradient(98deg, #2544a5 -20.61%, #264ab4 106.95%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .subnav-scroll-right-wrapper.scroll-dark.scroll-gradient {
+    background-image: linear-gradient(98deg, #2647ac -20.61%, #284bb7 106.95%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .subnav-scroll-right-wrapper.scroll-dark.scroll-gradient {
+    background-image: linear-gradient(98deg, #2645a7 -20.61%, #284bb7 106.95%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .subnav-scroll-right-wrapper.scroll-dark.scroll-gradient {
+    background-image: linear-gradient(98deg, #243f97 -20.61%, #274cba 106.95%);
+  }
+}
+.subnav-scroll-right-wrapper.scroll-dark .scroll-right-arrow:before {
+  content: "";
+  background: url("../assets/images/icons/arrow-right-white.svg");
+  height: 21px;
+  width: 33px;
+  background-size: contain;
+  display: block;
+}
+.subnav-scroll-right-wrapper.scroll-light {
+  background-color: #ffffff;
+  color: #131023;
+}
+.subnav-scroll-right-wrapper.scroll-light.scroll-gradient {
+  background-color: #2B56D3;
+}
+.subnav-scroll-right-wrapper.scroll-light .scroll-right-arrow:before {
+  content: "";
+  background: url("../assets/images/icons/arrow-right-dark.svg");
+  height: 21px;
+  width: 33px;
+  background-size: contain;
+  display: block;
+}
+
+.sub_nav_container a:hover, .sub_nav_container a:focus, .sub_nav_container a:active {
+  text-decoration: underline !important;
+}
+
+/*# sourceMappingURL=sub-navigation.css.map */

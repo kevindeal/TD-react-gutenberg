@@ -1,0 +1,10 @@
+.wp-block-image.is-style-rounded img {
+  border-radius: 20px;
+}
+
+.wp-block-freeform ol,
+.wp-block-freeform ul {
+  list-style: disc;
+}
+
+/*# sourceMappingURL=editor.css.map */

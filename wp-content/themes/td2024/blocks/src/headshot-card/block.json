@@ -1,0 +1,154 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/headshot-card",
+	"version": "0.1.1",
+	"title": "Image Grid Card",
+	"category": "text",
+	"icon": "admin-network",
+	"description": "Card for the Image Grid",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "div.td-alert-text"
+		},
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"heading": {
+			"type": "string"
+		},
+		"iconName": {
+			"type": "string"
+		},
+		"showHeading": {
+			"type": "boolean"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+        "text": {
+            "type": "string",
+            "default": "Firstname Lastname"
+        },
+		"imageOnly" :{
+			"type": "boolean",
+			"default": false
+		},
+		"showEyebrowOnDesktop" :{
+			"type": "boolean",
+			"default": true
+		},
+		"showEyebrowOnTablet" :{
+			"type": "boolean",
+			"default": true
+		},
+		"showEyebrowOnMobile" :{
+			"type": "boolean",
+			"default": true
+		},
+		"title": {
+            "type": "string",
+            "default": "Job Title"
+        },
+		"githubUrl": {
+            "type":"string",
+            "default": ""
+        },
+		"twitterUrl": {
+            "type":"string",
+            "default": ""
+        },
+		"linkedInUrl": {
+            "type":"string",
+            "default": ""
+        },
+		"githubIcon": {
+            "type":"string",
+            "default": "square-github"
+        },
+		"twitterIcon": {
+            "type":"string",
+            "default": "x-twitter"
+        },
+		"linkedInIcon": {
+            "type":"string",
+            "default": "linkedin"
+        },
+		"buttonText": {
+			"type": "string",
+			"default": "Get a demo"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"colorVariant": {
+			"type": "string",
+			"default": "DARK"
+		},
+		"showOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showImageOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showImageOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showImageOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"customNumber": {
+            "type": "number"
+        },
+		"selectedOption": {
+            "type": "string",
+            "default": "Standard"
+        },
+		"isUppercase": {
+            "type": "boolean",
+            "default": true
+        },
+        "uppercase": {
+            "type": "boolean",
+            "default": true
+        },
+		"showH3OnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showH3OnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showH3OnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		}
+	},
+	"example": {},
+	"parent": ["td/image-grid-container"],
+	"textdomain": "headshot-card",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

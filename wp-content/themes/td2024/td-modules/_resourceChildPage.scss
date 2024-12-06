@@ -1,0 +1,182 @@
+@use 'mixins';
+@use 'vars';
+
+
+@media only screen and (max-width: 480px){
+    .close {
+        right:10px !important;
+        width:24px !important;
+        height:24px !important;
+    }
+}
+@media only screen and (min-width:480px ) and (max-width:959px){
+    .close {
+        right:20px !important;
+        width:24px !important;
+        height:24px !important;
+    }
+}
+
+@media only screen and (min-width: 960px){
+    .onepage-section .row-internal.row-container{
+        margin-top:20px !important;
+    }
+ 
+}
+
+@media only screen and (max-width: 959px){
+     #videoframe{
+        width:80% !important;
+    }
+    .onepage-section .row-internal{
+        margin-top:20px !important;
+    }
+    .jumpers .menu-resources-single-menu-container ul > li {
+    width: 13% !important;
+}
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 960px){
+.jumpers .menu-resources-single-menu-container ul>li>a .removed {
+    display: none !important;
+}
+.jumpers .menu-resources-single-menu-container {
+    text-align: center;
+  }
+  .jumpers .menu-resources-single-menu-container ul {
+    margin: 0 auto;
+    float: none;
+    display: inline-block;
+    width: auto;
+  }
+  .jumpers .menu-resources-single-menu-container ul > li {
+    width: auto !important;
+    padding: 0 9px;
+  }
+}
+
+.modal {
+  display:none;
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(45,45,45); /* Fallback color */
+  background-color: rgba(45,45,45,0.75) /* Black w/ opacity */
+}
+
+
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position:absolute;
+  top:20%;
+  right:18%;
+  width:24px !important;
+  height:24px !important;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#videoframe{
+    position:absolute;
+    top:20%;
+    left:0px;
+    right:0px;
+    margin:0px auto;
+    height:500px !important;
+    border:0px;
+}
+
+.homeresources .tab-content .linkholder a:hover, .linkholder a.ctalink:hover, .tmb .t-entry p.t-entry-readmore .btn:hover{
+    background-color:transparent !important;
+}
+
+
+@media only screen and (min-width: 960px){
+    #videoframe{
+      width:60% !important;
+    }
+}
+
+/* Resource lobby page 2020 */
+.t-inside {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tmb .t-entry-title.h5 > a {
+  color: #2D2D2D !important;
+  font-weight: 400 !important;
+  font-family: "Roboto", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+
+.tmb .t-entry-excerpt > p {
+  color: #2D2D2D !important;
+}
+
+.resources .tmb .t-entry-text {
+  background-color: #fff !important;
+}
+
+.t-entry-readmore a.btn.btn-link.btn-flat, .t-entry-readmore a.btn.btn-default.btn-flat {
+  padding: 4px 30px !important;
+}
+
+.btn-container .custom-link.btn.border-width-0.btn-color-173912.btn-icon-left:hover,
+.btn-container .custom-link.btn.border-width-0.btn-color-173912.btn-icon-left:focus {
+  color: #fff !important;
+}
+
+.pos-middle .uncol .uncoltable .uncell .uncont .icon-box.icon-box-top {
+  box-shadow: none !important;
+}
+
+.style-light .btn-default, .style-dark .style-light.style-override .btn-default, .style-dark .style-light .btn-default {
+  background-color: #fff !important;
+}
+
+@media (min-width: 1261px) {
+  .heading-text.resource-heading .h1 span {
+    font-size: 72px !important;
+  }
+}
+
+.transparent-hero:before {
+    @include mixins.for-phone-and-tablet-only {
+      opacity: 0.25;
+    }
+  }
+
+  .transparent-hero .uncont,
+.transparent-hero .heading-text {
+    @include mixins.for-phone-and-tablet-only {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .transparent-hero > .row > .row-inner {
+    @include mixins.for-phone-and-tablet-only {
+      transform: translate(0, 20px);
+    }
+  }
+
+@media (max-width: 959px){
+  body .mobile-menu-button-light.close, body.home .mobile-menu-button-light.close {
+      margin-top: -14px !important;
+      padding-right: 35px !important;
+  }
+}

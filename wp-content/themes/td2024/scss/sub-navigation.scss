@@ -1,0 +1,71 @@
+.subnav-scroll-right-wrapper {
+	height:82px;
+	width: 40px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+    top: 0;
+	cursor: pointer;
+	&.scroll-dark {
+		background-color: #131023;
+		color: #fff;
+        @media screen and (min-width: 1280px) {
+            &.scroll-gradient {
+                background-image: linear-gradient(98deg, #2544a5 -20.61%, #264ab4 106.95%);
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            &.scroll-gradient {
+                background-image: linear-gradient(98deg, #2647ac -20.61%, #284bb7 106.95%);
+            }
+        }
+        @media screen and (min-width: 768px) {
+            &.scroll-gradient {
+                background-image: linear-gradient(98deg, #2645a7 -20.61%, #284bb7 106.95%);
+            }
+        }
+        @media screen and (max-width: 767px) {
+            &.scroll-gradient {
+                background-image: linear-gradient(98deg, #243f97 -20.61%, #274cba 106.95%);
+            }
+        }
+        
+		.scroll-right-arrow{
+			&:before {
+				content: '';
+				background: url('../assets/images/icons/arrow-right-white.svg');
+				height: 21px;
+				width: 33px;
+				background-size:contain;
+				display: block;
+			}
+		}
+	}
+	&.scroll-light {
+		background-color: #ffffff;
+		color: #131023;
+        &.scroll-gradient {
+            background-color: #2B56D3;
+        }
+		.scroll-right-arrow{
+			&:before {
+				content: '';
+				background: url('../assets/images/icons/arrow-right-dark.svg');
+				height: 21px;
+				width: 33px;
+				background-size:contain;
+				display: block;
+			}
+		}
+	}
+}
+
+.sub_nav_container {
+	a {
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline !important;
+		}
+	}
+}

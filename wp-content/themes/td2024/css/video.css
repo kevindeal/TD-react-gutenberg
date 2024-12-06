@@ -1,0 +1,114 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio. Adjust according to your video's aspect ratio */
+  overflow: hidden;
+}
+
+.video-container .wistia_embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videos__heading + .videos__subheading {
+  margin-top: 12px;
+}
+.videos__subheading p, .videos__subheading ul, .videos__subheading ol {
+  margin-bottom: 1em;
+}
+.videos__subheading a {
+  color: var(--link-color);
+  background-image: linear-gradient(90deg, var(--link-hover-underline-color), var(--link-hover-underline-color)), linear-gradient(90deg, var(--link-underline-color), var(--link-underline-color));
+  background-size: 0% var(--link-underline-width), 100% var(--link-underline-width);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+  font-weight: 600;
+}
+.videos__subheading a:hover {
+  background-size: 100% var(--link-underline-width), 100% var(--link-underline-width);
+}
+.videos__subheading > *:last-child {
+  margin-bottom: 0;
+}
+.videos_container {
+  --gutter-width: calc(.5*(var(--vw,100vw) - 100%));
+  --reverse-gutter-width: calc(-.5*(var(--vw,100vw) - 100%));
+  --videos-gap: 20px;
+  --video-max-w-static: 978px;
+  --video-max-w: calc(var(--container-max-w, 0) - var(--container-px, 0) - var(--videos-gap,0));
+  --video-max-w: none;
+  --link-color: #FFF;
+  --link-underline-width: 2px;
+  --link-underline-color: #3A61FF;
+  --link-hover-underline-color: #FFF;
+  display: flex;
+  justify-content: center;
+}
+.videos_container.bg-white {
+  --link-color: #3A61FF;
+  --link-hover-underline-color: #000;
+}
+.videos_container.bg-white .videos-text-wrapper a {
+  text-shadow: 1px 1px 1px #FFF, -1px 1px 1px #FFF, -1px -1px 1px #FFF, 1px -1px 1px #FFF, 2px 2px 1px #FFF, -2px 2px 1px #FFF, -2px -2px 1px #FFF, 2px -2px 1px #FFF;
+}
+.videos_container.align-text--full .videos-text-wrapper {
+  max-width: none;
+}
+.videos_container.has-carousel {
+  --video-max-w: calc(var(--container-max-w) - var(--container-px) - var(--videos-gap)*2);
+}
+.videos_container.has-carousel .videos-content-wrapper,
+.videos_container.has-carousel .videos-text-wrapper {
+  max-width: none;
+}
+@media (min-width: 978px) {
+  .videos_container, .videos_container.has-carousel {
+    --video-max-w: calc(var(--container-max-w, 0) - var(--container-px, 0) - var(--videos-gap,0));
+  }
+}
+@media (min-width: 1024px) {
+  .videos_container, .videos_container.has-carousel {
+    --videos-gap: 30px;
+    --video-max-w: var(--video-max-w-static);
+  }
+}
+.videos-text-wrapper, .videos-content-wrapper {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--video-max-w);
+}
+.videos_slider .slick-list {
+  margin-left: var(--reverse-gutter-width);
+  margin-right: var(--reverse-gutter-width);
+  padding-left: var(--gutter-width);
+}
+.videos_slider .videos_outer_wrapper,
+.videos_slider .caption {
+  max-width: var(--video-max-w);
+}
+.videos_slider .videos_outer_wrapper {
+  margin-right: var(--videos-gap);
+  width: 100%;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .videos_slider .videos_outer_wrapper {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+.videos_slider .videos_wrapper {
+  max-width: var(--video-max-w);
+  aspect-ratio: 16/9;
+  margin-right: var(--videos-gap);
+  width: 100%;
+}
+
+/*# sourceMappingURL=video.css.map */

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "td/card-horizontal",
+  "version": "0.1.1",
+  "title": "Card - Horizontal",
+  "category": "text",
+  "icon": "admin-network",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "div.td-alert-text"
+    },
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "iconName": {
+      "type": "string"
+    },
+    "showHeading": {
+      "type": "boolean"
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "textarea": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Get a demo"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "wholeCardButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "colorVariant": {
+      "type": "string",
+      "default": "DARK"
+    },
+    "displayOption": {
+      "type": "string",
+      "default": "image-left"
+    },
+    "isUppercase": {
+      "type": "boolean",
+      "default": true
+    },
+    "uppercase": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEyebrowOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEyebrowOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEyebrowOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showH3OnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showH3OnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showH3OnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "selectedOption": {
+      "type": "string",
+      "default": "Standard"
+    },
+    "buttonTargetBlank": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "example": {},
+  "textdomain": "card-horizontal",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

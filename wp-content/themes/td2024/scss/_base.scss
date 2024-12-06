@@ -1,0 +1,227 @@
+
+
+%html-content {
+    @extend %html-format;
+
+    p,ul,ol {
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: normal;
+    }
+
+    ul,ol {
+        li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+
+}
+
+%html-format {
+    --link-underline-width: 2px;
+    --link-underline-color: #3A61FF;
+    --link-color: #3A61FF;
+    --link-hover-underline-color: #000;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
+    h1,h2 {
+        font-family: 'ABC Arizona Flare Light', serif;
+    }
+    h3,h4 {
+        font-weight: 500;
+    }
+    h5,h6 {
+        font-weight: 600;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 1.1;
+        @media screen and (min-width: 1024px) {
+            font-size: 85px;
+        }
+    }
+    h2 {
+        font-size: 30px;
+        @media screen and (min-width: 1024px) {
+            font-size: 50px;
+        }
+    }
+    h3 {
+        font-size: 22px;
+        @media screen and (min-width: 1024px) {
+            font-size: 35px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        @media screen and (min-width: 1024px) {
+            font-size: 28px;
+        }
+    }
+    h6 {
+        font-size: 16px;
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+    h5 {
+        font-size: 16px;
+        @media screen and (min-width: 1024px) {
+            font-size: 24px;
+        }
+    }
+    
+    a {
+        color: var(--link-color);
+        background-image: linear-gradient(90deg, var(--link-hover-underline-color), var(--link-hover-underline-color)), linear-gradient(90deg, var(--link-underline-color) , var(--link-underline-color));
+        background-size: 0% var(--link-underline-width), 100% var(--link-underline-width);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        transition: background-size 0.5s ease-in-out;
+        font-weight: 600;
+        &:hover {
+            background-size: 100% var(--link-underline-width), 100% var(--link-underline-width);
+        }
+    }
+
+    p,ul,ol {
+        margin-bottom: 20px;
+        + h1,
+        + h2,
+        + h3,
+        + h4,
+        + h5,
+        + h6 {
+            margin-top: 3rem;
+        }
+    }
+
+    ul,ol {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    ol {
+        padding-left: 30px;
+        li {
+            list-style: decimal;
+        }
+    }
+    ul {
+        padding-left: 30px;
+        li {
+            list-style: disc;
+        }
+    }
+
+    i,em {
+        font-style: italic;
+    }
+
+    b,strong {
+        font-weight: 700;
+    }
+
+}
+
+.html-content {
+    @extend %html-content;
+}
+
+.html-format {
+    @extend %html-format;
+}
+
+.entry-content {
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6,
+    > p,
+    > ul,
+    > ol {
+        --link-underline-width: 2px;
+        --link-underline-color: #3A61FF;
+        --link-color: #3A61FF;
+        --link-hover-underline-color: #000;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+        
+            a {
+                color: var(--link-color);
+                background-image: linear-gradient(90deg, var(--link-hover-underline-color), var(--link-hover-underline-color)), linear-gradient(90deg, var(--link-underline-color) , var(--link-underline-color));
+                background-size: 0% var(--link-underline-width), 100% var(--link-underline-width);
+                background-position: left bottom;
+                background-repeat: no-repeat;
+                transition: background-size 0.5s ease-in-out;
+                font-weight: 600;
+                &:hover {
+                    background-size: 100% var(--link-underline-width), 100% var(--link-underline-width);
+                }
+            }
+        
+    }
+    > h1,
+    > h2 {
+        font-family: 'ABC Arizona Flare Light', serif;
+    }
+    > h3,
+    > h4 {
+        font-weight: 500;
+    }
+    > h5,
+    > h6 {
+        font-weight: 600;
+    }
+    > h1 {
+        font-size: 55px;
+        line-height: 1.1;
+        @media screen and (min-width: 1024px) {
+            font-size: 85px;
+        }
+    }
+    > h2 {
+        font-size: 30px;
+        @media screen and (min-width: 1024px) {
+            font-size: 50px;
+        }
+    }
+    > h3 {
+        font-size: 22px;
+        @media screen and (min-width: 1024px) {
+            font-size: 35px;
+        }
+    }
+    > h4 {
+        font-size: 20px;
+        @media screen and (min-width: 1024px) {
+            font-size: 28px;
+        }
+    }
+    > h6 {
+        font-size: 16px;
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+    > h5 {
+        font-size: 16px;
+        @media screen and (min-width: 1024px) {
+            font-size: 24px;
+        }
+    }
+
+
+}

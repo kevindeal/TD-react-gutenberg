@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "td/content-container",
+  "version": "0.1.0",
+  "title": "Content Container",
+  "category": "text",
+  "icon": "id",
+  "description": "A container for easily populating content objects.",
+  "attributes": {
+    "colorVariant": {
+      "type": "string",
+      "default": "DARK"
+    },
+    "layout": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "imageLoc": {
+      "type": "string",
+      "default": "right"
+    },
+    "altImageLoc": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageAlignX": {
+      "type": "string",
+      "default": "center"
+    },
+    "imageAlignY": {
+      "type": "string",
+      "default": "center"
+    },
+    "vSplit": {
+      "type": "string",
+      "default": "50/50"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "displayTitleOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayTitleOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayTitleOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "referenceId": {
+      "type": "string"
+    }
+  },
+  "example": {},
+  "textdomain": "content-container",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,19 @@
+.pagination .page-numbers {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 35px;
+}
+.pagination .page-numbers.current {
+  color: #3A61FF;
+}
+.pagination .page-numbers:last-child {
+  margin-right: 0;
+}
+.pagination .page-numbers.prev, .pagination .page-numbers.next {
+  width: 35px;
+}
+.pagination .page-numbers svg {
+  width: 100%;
+}
+
+/*# sourceMappingURL=pagination.css.map */

@@ -1,0 +1,142 @@
+@use 'mixins';
+@use 'vars';
+
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'ABC Arizona Flare Light', serif;
+  line-height: 1.3;
+}
+
+p {
+  font: 16px 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: vars.$color-blue;
+  transition: all 300ms ease-out;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: vars.$color-blue-light;
+    text-decoration: none;
+  }
+}
+
+#wrapper {
+  & > {
+
+    h1 {
+      display: none;
+    }
+    
+    #board_title {
+      margin-bottom: 72px;
+      text-align: center;
+      font-size: 50px;
+      line-height: 1.3;
+    }
+  }
+}
+
+.accessible {
+  section {
+    margin-top: 36px;
+
+    &.level-0 {
+      padding-bottom: 18px;
+
+      &:last-child {
+        border-bottom-width: 0;
+      }
+    }
+
+    &.level-0,
+    &.level-1,
+    &.level-2,
+    &.level-3,
+    &.level-4,
+    &.level-5 {
+
+      & > h3 {
+        font-size: 35px;
+        font-family: 'Inter', sans-serif;
+      }
+
+      & > h4 {
+        font-size: 23px;
+        font-family: 'Inter', sans-serif;
+      }
+
+      & > h5 {
+        font-size: 20px;
+      }
+    }
+
+    &.child {
+      //margin-left: 0;
+      border-top: 1px solid #131023;
+    }
+
+    .opening {
+      width: 100%;
+      max-width: 270px;
+    }
+  }
+
+  #app_body {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 !important;
+    max-width: 770px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    #content {
+      line-height: 1.5;
+    }
+  }
+
+  #application {
+    margin: 36px 0 0;
+    padding: 25px 30px 30px 30px;
+    max-width: 770px;
+    background-color: vars.$color-gray;
+    border-radius: vars.$border-radius;
+  }
+
+  #submit_app {
+    background-color: vars.$color-blue-light;
+    border: 0px solid transparent;
+    transition: all 300ms ease-out;
+    border-radius: vars.$button-border-radius;
+    font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif;
+    text-shadow: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: vars.$color-blue;
+      border: 0px solid transparent;
+    }
+  }
+  
+  h1 {
+    &.app-title {
+      margin-bottom: 36px;
+    }
+  }
+
+}

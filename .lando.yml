@@ -1,0 +1,6 @@
+name: td-next
+recipe: pantheon
+config:
+  framework: wordpress
+  site: td-next
+  id: bc82f5b3-22a1-4c1a-887b-d08585c31146

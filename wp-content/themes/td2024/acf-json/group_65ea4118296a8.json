@@ -1,0 +1,159 @@
+{
+    "key": "group_65ea4118296a8",
+    "title": "Masthead Promos",
+    "fields": [
+        {
+            "key": "field_65ea41b1ac279",
+            "label": "Masthead Settings",
+            "name": "masthead_settings",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65ea4fb6ba3c2",
+                    "label": "Masthead Title",
+                    "name": "masthead_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65ea41b1ac279"
+                },
+                {
+                    "key": "field_65ea4118ac278",
+                    "label": "Color Variant",
+                    "name": "color_variant",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "lavender": "Lavender",
+                        "teal": "Teal",
+                        "blue": "Blue",
+                        "red": "Red",
+                        "green": "Green"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_65ea41b1ac279"
+                },
+                {
+                    "key": "field_65ea4202ac27a",
+                    "label": "Main Text",
+                    "name": "main_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65ea41b1ac279"
+                },
+                {
+                    "key": "field_65ea4214ac27b",
+                    "label": "Link Url",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "parent_repeater": "field_65ea41b1ac279"
+                },
+                {
+                    "key": "field_65eb36d280191",
+                    "label": "Slug",
+                    "name": "slug",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Choose which page to display the masthead on",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "e.g. \"product\"",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65ea41b1ac279"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "masthead-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1717436137
+}

@@ -1,0 +1,43 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-td-cards-block {
+	border: 2px dotted #060;
+}
+
+.wp-block-td-card-vertical {
+    font-family: "Inter", sans-serif;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 500px;
+	border: 1px solid rgba(0,0,0,0.2);
+
+	.btn-secondary {
+		padding-right: 30px;
+        &:after {
+            right: 0;
+        }
+	}
+
+	.card-title{
+		&.numeric {
+			font-size: 72px;
+			@media screen and (min-width: 1536px) {
+				font-size: 85px;
+			}
+		}
+	}
+}
+
+.wp-block-td-card-container {
+    .card-light {
+        .btn-primary {
+            color: unset;
+        }
+    }
+}

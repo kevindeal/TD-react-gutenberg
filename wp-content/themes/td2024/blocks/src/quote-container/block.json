@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/quote-container",
+	"version": "0.1.0",
+	"title": "Quote Container",
+	"category": "text",
+	"icon": "admin-network",
+	"description": "A container for a quote(s) with a citation that can show one quote statically or cycle through multiple quotes.",
+	"supports": {
+		"html": false
+	},
+    "attributes": {
+		"numberOfQuotes": {
+			"type":"number",
+			"default": 1
+		},
+		"sliderSpeed": {
+			"type": "number",
+			"default": 500
+		},
+        "colorVariant": {
+			"type": "string",
+			"default": "DARK"
+		},
+		"overrideBackground": {
+			"type": "boolean"
+		},
+		"backgroundAlignmentPair": {
+			"type": "string",
+			"default": "center center"
+		},
+		"backgroundHorizontalAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"backgroundVerticalAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"backgroundFitMode": {
+			"type": "string",
+			"default": "contain"
+		},
+		"backgroundMedia": {
+			"type":"object",
+			"default": {
+				"title" : {
+					"type": "string",
+					"default": ""
+				}
+			}
+		}
+    },
+    "textdomain": "quotes",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

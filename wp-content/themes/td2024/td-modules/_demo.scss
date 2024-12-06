@@ -1,0 +1,210 @@
+@use 'mixins';
+@use 'vars';
+
+body {
+	.box-wrapper {
+		background: #fff url('https://www.treasuredata.com/wp-content/uploads/rdpb.jpg') 100% 100% / cover no-repeat !important;
+
+		@include mixins.for-tablet-landscape-up {
+			background-position: 0 320px!important;
+		}
+	}
+}
+
+.demoheading {
+	padding-top: 36px;
+}
+
+.shd {
+	top: -18px;
+
+	p {
+		padding-bottom: 11px;
+		font-size: 18px;
+	}
+}
+
+.main-container {
+	.row-container {
+		z-index: 1;
+
+		&.diacover-wrapper {
+			position: absolute;
+			z-index: 0;
+			top: 320px;
+			left: 0;
+			height: 250px;
+			opacity: 0;
+
+			@include mixins.for-tablet-landscape-up {
+				opacity: 1;
+			}
+
+			& > .row {
+				padding: 0;
+
+				.diacover {
+					position: absolute;
+					z-index: -1;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 180px 100vw 0 0;
+					border-color: #fff transparent transparent transparent;
+					content: ' ';
+				}
+			}
+		}
+
+		&.lastrow {
+			& > .row {
+				padding-bottom: 18px;
+			}
+		}
+	}
+}
+
+.mktoformwrapper {
+	&.request {
+		.mktoForm {
+			position: relative;
+			border-radius: 9px;
+			box-shadow: 0px 10px 30px 0px rgba(62, 95, 190, 0.25) !important;
+			
+			@include mixins.for-phone-only {
+				padding: 40px!important;
+			}
+
+			&:after {
+				position: absolute;
+				z-index: -1;
+				content: '';
+				width: 300px;
+				height: 234px;
+				top: -115px;
+				right: -76px;
+
+				@include mixins.for-tablet-landscape-up {
+					background: transparent url('https://www.treasuredata.com/wp-content/uploads/rdfb.png') 0 0/300px 234px no-repeat;
+				}
+			}
+
+			h2 {
+				padding-top: 18px;
+
+				& + p {
+					padding-bottom: 18px;
+				}
+			}
+		}
+	}
+}
+
+.demotextcolumn {
+	.review-box {
+		margin-top: 72px;
+		border-width: 0;
+
+		@include mixins.for-tablet-landscape-up {
+			margin-top: 108px;
+		}
+
+		.iconbox {
+			padding-top: 32px;
+
+			&:before {
+				top: -26px;
+				padding: 0;
+				background-color: transparent;
+			}
+
+			.reviewset {
+				position: relative;
+				margin-top: 36px;
+				margin-bottom: 18px;
+				padding: 90px 25px 35px !important;
+				border-radius: 9px;
+				background-color: rgba(255, 255, 255, 0.5);
+
+				@include mixins.for-tablet-landscape-up {
+					margin-top: 0;
+					padding: 35px 25px 35px 75px !important;
+				}
+
+				.image {
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: 25px;
+					transform: translate(0, -24%);
+					width: auto;
+					display: block !important;
+
+					@include mixins.for-tablet-landscape-up {
+						top: 50%;
+						left: -45px;
+						transform: translate(0, -50%);
+					}
+
+					img {
+						border: 2px solid #fff;
+						box-shadow: 0px 10px 30px 0px rgba(62, 95, 190, 0.25);
+					}
+				}
+
+				h4 {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+.whys {
+	.icon-box {
+		box-shadow: none;
+
+		.icon-box-content {
+			p {
+				padding-left: 0;
+				padding-right: 0;
+				font-size: 16px !important;
+			}
+		}
+
+		.icon-box-icon {
+			width: 144px;
+			height: 144px;
+			max-width: 144px;
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 0px 10px 30px 0px rgba(62, 95, 190, 0.25) !important;
+
+			.icon-media {
+				width: 100%;
+				height: 100%;
+			}
+
+			img {
+				position: relative;
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+		}
+	}
+}
+
+.site-footer {
+	.site-info {
+		p {
+			padding-top: 0 !important;
+		}
+	}
+}
+
+
+.demoheading .wp-image-58255 {
+	max-width: 232px;
+}

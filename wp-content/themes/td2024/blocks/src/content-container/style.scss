@@ -1,0 +1,37 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+ .quote-dark {
+    .arrows-box {
+        .slick-prev {
+            &:before {
+                background: url('../../../assets/images/icons/arrow-left-white.svg');
+            }
+        }
+        .slick-next {
+            &:before {
+                background: url('../../../assets/images/icons/arrow-right-white.svg');
+            }
+        }
+    }
+}
+
+
+// @media screen and (max-width: 767px) {
+//     .content-section:last-child {
+//         order: -1;
+//     }
+// }
+
+@media screen and (max-width: 1024px) {
+    .content-content,
+    .content-image-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

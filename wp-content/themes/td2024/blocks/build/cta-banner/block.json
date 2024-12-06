@@ -1,0 +1,199 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "td/cta-banner",
+  "version": "0.1.0",
+  "title": "Cta Banner",
+  "category": "text",
+  "icon": "id",
+  "description": "A block for call to actions.",
+  "supports": {
+    "anchor": true
+  },
+  "attributes": {
+    "colorVariant": {
+      "type": "string",
+      "default": "DARK"
+    },
+    "referenceId": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "string",
+      "default": "2 Column"
+    },
+    "vSplit": {
+      "type": "string",
+      "default": "50/50"
+    },
+    "stackPreference": {
+      "type": "string",
+      "default": "mobile"
+    },
+    "stackOrder": {
+      "type": "string",
+      "default": "headings"
+    },
+    "roundTopCorners": {
+      "type": "boolean",
+      "default": false
+    },
+    "roundBottomCorners": {
+      "type": "boolean",
+      "default": false
+    },
+    "eyebrow": {
+      "type": "string",
+      "default": "Eyebrow Text"
+    },
+    "showEyebrowOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEyebrowOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEyebrowOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "heading": {
+      "type": "string",
+      "default": "Heading Text"
+    },
+    "showHeadingOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showHeadingOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showHeadingOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showImageOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showImageOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showImageOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "subheading": {
+      "type": "rich-text",
+      "default": "Subheading Text"
+    },
+    "showSubheadingOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSubheadingOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSubheadingOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Get a demo"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "ctaOpenNewWindow": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCTAOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCTAOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCTAOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "secondCTAText": {
+      "type": "string",
+      "default": "Get a demo"
+    },
+    "secondCTAUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "secondCTAOpenNewWindow": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSecondCTAOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSecondCTAOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSecondCTAOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showInnerBlockOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showInnerBlockOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showInnerBlockOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "selectedOption": {
+      "type": "string",
+      "default": "Standard"
+    },
+    "overrideBackground": {
+      "type": "boolean"
+    },
+    "backgroundHorizontalAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "backgroundVerticalAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "backgroundFitMode": {
+      "type": "string",
+      "default": "contain"
+    },
+    "backgroundMedia": {
+      "type": "object",
+      "default": {
+        "title": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  },
+  "example": {},
+  "textdomain": "cta-banner",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

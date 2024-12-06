@@ -1,0 +1,199 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/hero",
+	"version": "0.1.1",
+	"title": "Hero",
+	"category": "text",
+	"icon": "admin-network",
+	"description": "A pre-formatted block for Heros within the Treasure Data website.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"colorVariant": {
+			"type": "string",
+			"default": "DARK"
+		},
+		"headerFontSize":  {
+			"type": "string",
+			"default": "text-mobile-6xl lg:text-6xl"
+		},
+		"layout": {
+			"type":"string",
+			"default": "2 Column"
+		},
+		"vSplit": {
+			"type":"string",
+			"default": "60/40"
+		},
+		"stackPreference": {
+			"type":"string",
+			"default": "mobile"
+		},
+		"stackOrder": {
+			"type":"string",
+			"default": "headings"
+		},
+		"roundTopCorners": {
+			"type": "boolean",
+			"default": false
+		},
+		"roundBottomCorners": {
+			"type": "boolean",
+			"default": false
+		},
+		"heading": {
+			"type": "string",
+			"default": "Heading Text"
+		},
+		"showHeadingOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showHeadingOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showHeadingOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"subheading": {
+			"type": "rich-text",
+			"default": "Subheading Text"
+		},
+		"showSubheadingOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showSubheadingOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showSubheadingOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"shouldLoopOnMobile" : {
+			"type": "boolean",
+			"default" : false
+		},
+		"shouldLoopOnTablet" : {
+			"type": "boolean",
+			"default" : false
+		},
+		"shouldLoopOnDesktop" : {
+			"type": "boolean",
+			"default" : false
+		},
+		"ctaText": {
+			"type": "string",
+			"default": "Get a demo"
+		},
+		"ctaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"showCTAOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showCTAOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showCTAOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"secondCTAText": {
+			"type": "string",
+			"default": "Get a demo"
+		},
+		"secondCTAUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"showSecondCTAOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showSecondCTAOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showSecondCTAOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showInnerBlockOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showInnerBlockOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showInnerBlockOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+        "selectedOption": {
+            "type": "string",
+            "default": "Standard"
+        },
+		"overrideBackground": {
+			"type": "boolean"
+		},
+		"backgroundHorizontalAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"backgroundVerticalAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"backgroundFitMode": {
+			"type": "string",
+			"default": "contain"
+		},
+		"backgroundMedia": {
+			"type":"object",
+			"default": {
+				"title" : {
+					"type": "string",
+					"default": ""
+				}
+			}
+		},
+		"backgroundMediaMobile": {
+			"type":"object",
+			"default": {
+				"title" : {
+					"type": "string",
+					"default": ""
+				}
+			}
+		},
+		"backgroundMediaTablet": {
+		  "type": "object",
+		  "default": {
+			"title": {
+			  "type": "string",
+			  "default": ""
+			}
+		  }
+		},
+		"buttonTargetBlank": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"styles": [],
+	"example": {},
+	"textdomain": "card-horizontal",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

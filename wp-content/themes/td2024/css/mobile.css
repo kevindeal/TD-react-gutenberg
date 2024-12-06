@@ -1,0 +1,10 @@
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; /* 55px */
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

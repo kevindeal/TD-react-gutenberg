@@ -1,0 +1,326 @@
+{
+    "key": "group_6608222aa5d46",
+    "title": "Logo Banner Block",
+    "fields": [
+        {
+            "key": "field_6608222a1c49c",
+            "label": "Color Variant",
+            "name": "color_variant",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "DARK": "Dark",
+                "LIGHT": "Light"
+            },
+            "default_value": "DARK",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0,
+            "wpml_cf_preferences": 1
+        },
+        {
+            "key": "field_6608225c1c49d",
+            "label": "Heading Text",
+            "name": "heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_660823051c49f",
+            "label": "Heading Visibility",
+            "name": "heading_visibility",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "desktop": "Desktop",
+                "tablet": "Tablet",
+                "mobile": "Mobile"
+            },
+            "default_value": [
+                "desktop",
+                "tablet",
+                "mobile"
+            ],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0,
+            "custom_choice_button_text": "Add new choice",
+            "wpml_cf_preferences": 1
+        },
+        {
+            "key": "field_663bb81607071",
+            "label": "No Background",
+            "name": "no_background",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "Displays text and images with a transparent background. Useful for when embedded in other objects.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_660822c81c49e",
+            "label": "Animate",
+            "name": "animate",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Should Animate?",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 1
+        },
+        {
+            "key": "field_662b13715b8ac",
+            "label": "Animation Speed Desktop",
+            "name": "animation_speed_desktop",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Animation speed for a full loop of logos in miliseconds.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_660822c81c49e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": 20000,
+            "min": 20000,
+            "max": 999999,
+            "step": 1000,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_662b13995b8ad",
+            "label": "Animation Speed Mobile\/Tablet",
+            "name": "animation_speed_mobile",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Time for a full loop in ms.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_660822c81c49e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": 20000,
+            "min": 20000,
+            "max": 999999,
+            "step": 1000,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_660823781c4a0",
+            "label": "Logos",
+            "name": "logos",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "wpml_cf_preferences": 1,
+            "sub_fields": [
+                {
+                    "key": "field_6608238d1c4a1",
+                    "label": "Logo Image",
+                    "name": "logo_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_660823781c4a0",
+                    "wpml_cf_preferences": 1
+                },
+                {
+                    "key": "field_6608239f1c4a2",
+                    "label": "Logo Link",
+                    "name": "logo_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "If no URL is provided, logo will not be clickable.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_660823781c4a0",
+                    "wpml_cf_preferences": 1
+                },
+                {
+                    "key": "field_662b122cc9dd2",
+                    "label": "Logo Height",
+                    "name": "logo_height",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Height in pixels",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "default_value": 56,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_660823781c4a0"
+                },
+                {
+                    "key": "field_662b1279c9dd3",
+                    "label": "Logo Width",
+                    "name": "logo_width",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "default_value": 160,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_660823781c4a0"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/logo-banner"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "translation",
+    "modified": 1717183277
+}

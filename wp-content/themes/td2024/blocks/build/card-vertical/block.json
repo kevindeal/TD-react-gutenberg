@@ -1,0 +1,190 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "td/card-vertical",
+  "version": "0.1.1",
+  "title": "Card - Vertical",
+  "category": "text",
+  "icon": "admin-network",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "div.td-alert-text"
+    },
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "iconName": {
+      "type": "string"
+    },
+    "showHeading": {
+      "type": "boolean"
+    },
+    "removeTopPadding": {
+      "type": "boolean",
+      "default": false
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "textarea": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Get a demo"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "wholeCardButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "colorVariant": {
+      "type": "string",
+      "default": "DARK"
+    },
+    "showEyebrowOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEyebrowOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showEyebrowOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showBodyTextOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showBodyTextOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showBodyTextOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showImageOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "showImageOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showImageOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "imageOnly": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "default"
+    },
+    "selectedOption": {
+      "type": "string",
+      "default": "Standard"
+    },
+    "isUppercase": {
+      "type": "boolean",
+      "default": true
+    },
+    "uppercase": {
+      "type": "boolean",
+      "default": true
+    },
+    "showH3OnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "showH3OnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "showH3OnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "fontSize": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonStyle": {
+      "type": "string",
+      "default": "primary"
+    },
+    "customNumber": {
+      "type": "string",
+      "default": ""
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": "display"
+    },
+    "listItems": {
+      "type": "array",
+      "default": [
+        "List item",
+        "List item",
+        "List item"
+      ]
+    },
+    "listStyle": {
+      "type": "string",
+      "default": "check"
+    },
+    "listHeading": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonTargetBlank": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "example": {},
+  "textdomain": "card-vertical",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

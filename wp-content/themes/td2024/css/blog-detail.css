@@ -1,0 +1,351 @@
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  .single-post #case-study-hero, .single-resources #case-study-hero, .single-press-releases #case-study-hero {
+    background-color: #ffffff;
+  }
+}
+.single-post #case-study-hero .btn-secondary.text-white:after, .single-resources #case-study-hero .btn-secondary.text-white:after, .single-press-releases #case-study-hero .btn-secondary.text-white:after {
+  background: url("../assets/images/icons/arrow-white-mobile.svg") no-repeat center center;
+  width: 20px;
+  right: -33px;
+}
+.single-post .btn-secondary.left:after, .single-resources .btn-secondary.left:after, .single-press-releases .btn-secondary.left:after {
+  display: none;
+}
+.single-post .btn-secondary.left:before, .single-resources .btn-secondary.left:before, .single-press-releases .btn-secondary.left:before {
+  content: "";
+  position: absolute;
+  background: url("../assets/images/icons/arrow-left-dark-sm.svg") no-repeat center center;
+  margin-top: -3px;
+  width: 38px;
+  height: 23px;
+  bottom: 10px;
+  left: -38px;
+}
+@media screen and (min-width: 768px) and (max-width: 805px) {
+  .single-post .btn-secondary.left, .single-resources .btn-secondary.left, .single-press-releases .btn-secondary.left {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+  .single-post .btn-secondary.left, .single-resources .btn-secondary.left, .single-press-releases .btn-secondary.left {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .single-post .btn-secondary.left, .single-resources .btn-secondary.left, .single-press-releases .btn-secondary.left {
+    margin-left: 30px;
+  }
+}
+.single-post .post-container .post-body p, .single-resources .post-container .post-body p, .single-press-releases .post-container .post-body p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #131023;
+  font-weight: normal;
+}
+.single-post .post-container .post-body p a, .single-resources .post-container .post-body p a, .single-press-releases .post-container .post-body p a {
+  color: #3A61FF;
+  text-decoration: underline;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .single-post .post-container .post-body .two-col-mobile, .single-resources .post-container .post-body .two-col-mobile, .single-press-releases .post-container .post-body .two-col-mobile {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.single-post .post-container .post-body p + h1,
+.single-post .post-container .post-body p + h2,
+.single-post .post-container .post-body p + h3,
+.single-post .post-container .post-body p + h4,
+.single-post .post-container .post-body p + h5,
+.single-post .post-container .post-body p + h6, .single-post .post-container .post-body ul + h1,
+.single-post .post-container .post-body ul + h2,
+.single-post .post-container .post-body ul + h3,
+.single-post .post-container .post-body ul + h4,
+.single-post .post-container .post-body ul + h5,
+.single-post .post-container .post-body ul + h6, .single-post .post-container .post-body ol + h1,
+.single-post .post-container .post-body ol + h2,
+.single-post .post-container .post-body ol + h3,
+.single-post .post-container .post-body ol + h4,
+.single-post .post-container .post-body ol + h5,
+.single-post .post-container .post-body ol + h6, .single-resources .post-container .post-body p + h1,
+.single-resources .post-container .post-body p + h2,
+.single-resources .post-container .post-body p + h3,
+.single-resources .post-container .post-body p + h4,
+.single-resources .post-container .post-body p + h5,
+.single-resources .post-container .post-body p + h6, .single-resources .post-container .post-body ul + h1,
+.single-resources .post-container .post-body ul + h2,
+.single-resources .post-container .post-body ul + h3,
+.single-resources .post-container .post-body ul + h4,
+.single-resources .post-container .post-body ul + h5,
+.single-resources .post-container .post-body ul + h6, .single-resources .post-container .post-body ol + h1,
+.single-resources .post-container .post-body ol + h2,
+.single-resources .post-container .post-body ol + h3,
+.single-resources .post-container .post-body ol + h4,
+.single-resources .post-container .post-body ol + h5,
+.single-resources .post-container .post-body ol + h6, .single-press-releases .post-container .post-body p + h1,
+.single-press-releases .post-container .post-body p + h2,
+.single-press-releases .post-container .post-body p + h3,
+.single-press-releases .post-container .post-body p + h4,
+.single-press-releases .post-container .post-body p + h5,
+.single-press-releases .post-container .post-body p + h6, .single-press-releases .post-container .post-body ul + h1,
+.single-press-releases .post-container .post-body ul + h2,
+.single-press-releases .post-container .post-body ul + h3,
+.single-press-releases .post-container .post-body ul + h4,
+.single-press-releases .post-container .post-body ul + h5,
+.single-press-releases .post-container .post-body ul + h6, .single-press-releases .post-container .post-body ol + h1,
+.single-press-releases .post-container .post-body ol + h2,
+.single-press-releases .post-container .post-body ol + h3,
+.single-press-releases .post-container .post-body ol + h4,
+.single-press-releases .post-container .post-body ol + h5,
+.single-press-releases .post-container .post-body ol + h6 {
+  margin-top: 3rem;
+}
+.single-post .post-container .post-body h1,
+.single-post .post-container .post-body h2,
+.single-post .post-container .post-body h3,
+.single-post .post-container .post-body h4,
+.single-post .post-container .post-body h5,
+.single-post .post-container .post-body h6, .single-resources .post-container .post-body h1,
+.single-resources .post-container .post-body h2,
+.single-resources .post-container .post-body h3,
+.single-resources .post-container .post-body h4,
+.single-resources .post-container .post-body h5,
+.single-resources .post-container .post-body h6, .single-press-releases .post-container .post-body h1,
+.single-press-releases .post-container .post-body h2,
+.single-press-releases .post-container .post-body h3,
+.single-press-releases .post-container .post-body h4,
+.single-press-releases .post-container .post-body h5,
+.single-press-releases .post-container .post-body h6 {
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+.single-post .post-container .post-body h1, .single-post .post-container .post-body h2, .single-resources .post-container .post-body h1, .single-resources .post-container .post-body h2, .single-press-releases .post-container .post-body h1, .single-press-releases .post-container .post-body h2 {
+  font-family: "ABC Arizona Flare Light", serif;
+}
+.single-post .post-container .post-body h3, .single-post .post-container .post-body h4, .single-resources .post-container .post-body h3, .single-resources .post-container .post-body h4, .single-press-releases .post-container .post-body h3, .single-press-releases .post-container .post-body h4 {
+  font-weight: 500;
+}
+.single-post .post-container .post-body h5, .single-post .post-container .post-body h6, .single-resources .post-container .post-body h5, .single-resources .post-container .post-body h6, .single-press-releases .post-container .post-body h5, .single-press-releases .post-container .post-body h6 {
+  font-weight: 600;
+}
+.single-post .post-container .post-body h1, .single-resources .post-container .post-body h1, .single-press-releases .post-container .post-body h1 {
+  font-size: 55px;
+  line-height: 1.1;
+}
+@media screen and (min-width: 1024px) {
+  .single-post .post-container .post-body h1, .single-resources .post-container .post-body h1, .single-press-releases .post-container .post-body h1 {
+    font-size: 85px;
+  }
+}
+.single-post .post-container .post-body h2, .single-resources .post-container .post-body h2, .single-press-releases .post-container .post-body h2 {
+  font-size: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .single-post .post-container .post-body h2, .single-resources .post-container .post-body h2, .single-press-releases .post-container .post-body h2 {
+    font-size: 50px;
+  }
+}
+.single-post .post-container .post-body h3, .single-resources .post-container .post-body h3, .single-press-releases .post-container .post-body h3 {
+  font-size: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .single-post .post-container .post-body h3, .single-resources .post-container .post-body h3, .single-press-releases .post-container .post-body h3 {
+    font-size: 35px;
+  }
+}
+.single-post .post-container .post-body h4, .single-resources .post-container .post-body h4, .single-press-releases .post-container .post-body h4 {
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .single-post .post-container .post-body h4, .single-resources .post-container .post-body h4, .single-press-releases .post-container .post-body h4 {
+    font-size: 28px;
+  }
+}
+.single-post .post-container .post-body h6, .single-resources .post-container .post-body h6, .single-press-releases .post-container .post-body h6 {
+  font-size: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .single-post .post-container .post-body h6, .single-resources .post-container .post-body h6, .single-press-releases .post-container .post-body h6 {
+    font-size: 20px;
+  }
+}
+.single-post .post-container .post-body h5, .single-resources .post-container .post-body h5, .single-press-releases .post-container .post-body h5 {
+  font-size: 16px;
+  color: #131023;
+}
+@media screen and (min-width: 1024px) {
+  .single-post .post-container .post-body h5, .single-resources .post-container .post-body h5, .single-press-releases .post-container .post-body h5 {
+    font-size: 24px;
+  }
+}
+.single-post .post-container .post-body .wp-block-image.is-style-rounded img, .single-resources .post-container .post-body .wp-block-image.is-style-rounded img, .single-press-releases .post-container .post-body .wp-block-image.is-style-rounded img {
+  border-radius: 20px;
+}
+.single-post .post-container .post-body ol, .single-resources .post-container .post-body ol, .single-press-releases .post-container .post-body ol {
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.single-post .post-container .post-body ol li, .single-resources .post-container .post-body ol li, .single-press-releases .post-container .post-body ol li {
+  list-style: decimal;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #131023;
+  font-weight: normal;
+}
+.single-post .post-container .post-body ol li a, .single-resources .post-container .post-body ol li a, .single-press-releases .post-container .post-body ol li a {
+  color: #3A61FF;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.single-post .post-container .post-body ul, .single-resources .post-container .post-body ul, .single-press-releases .post-container .post-body ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.single-post .post-container .post-body ul li, .single-resources .post-container .post-body ul li, .single-press-releases .post-container .post-body ul li {
+  list-style: disc;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #131023;
+  font-weight: normal;
+}
+.single-post .post-container .post-body ul li a, .single-resources .post-container .post-body ul li a, .single-press-releases .post-container .post-body ul li a {
+  color: #3A61FF;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.single-post .post-container .post-body .wp-block-quote, .single-resources .post-container .post-body .wp-block-quote, .single-press-releases .post-container .post-body .wp-block-quote {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.single-post .post-container .post-body .wp-block-quote p, .single-resources .post-container .post-body .wp-block-quote p, .single-press-releases .post-container .post-body .wp-block-quote p {
+  font-size: 35px;
+  color: #3A61FF;
+  font-weight: 600;
+  line-height: 140%;
+}
+.single-post .post-container .post-body .wp-block-quote p:after, .single-resources .post-container .post-body .wp-block-quote p:after, .single-press-releases .post-container .post-body .wp-block-quote p:after {
+  content: "”";
+}
+@media screen and (max-width: 767px) {
+  .single-post .post-container .post-body .wp-block-quote p, .single-resources .post-container .post-body .wp-block-quote p, .single-press-releases .post-container .post-body .wp-block-quote p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 30.8px */
+  }
+}
+.single-post .post-container .post-body .wp-block-quote cite, .single-resources .post-container .post-body .wp-block-quote cite, .single-press-releases .post-container .post-body .wp-block-quote cite {
+  font-size: 16px;
+  color: #3A61FF;
+  text-decoration: underline;
+  margin-top: 20px;
+  display: block;
+  font-style: normal;
+  line-height: 1.6;
+}
+.single-post .post-container .post-body .wp-block-quote cite strong, .single-resources .post-container .post-body .wp-block-quote cite strong, .single-press-releases .post-container .post-body .wp-block-quote cite strong {
+  font-weight: 700;
+}
+.single-post .post-container .post-body .wp-block-quote:before, .single-resources .post-container .post-body .wp-block-quote:before, .single-press-releases .post-container .post-body .wp-block-quote:before {
+  content: "“";
+  position: absolute;
+  left: -18px;
+  top: 5px;
+  font-size: 35px;
+  color: #3A61FF;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .single-post .post-container .post-body .wp-block-quote:before, .single-resources .post-container .post-body .wp-block-quote:before, .single-press-releases .post-container .post-body .wp-block-quote:before {
+    font-size: 22px;
+    left: -10px;
+  }
+}
+.single-post .post-container .post-body .cta-block, .single-resources .post-container .post-body .cta-block, .single-press-releases .post-container .post-body .cta-block {
+  padding-left: 0;
+  padding-right: 0;
+}
+.single-post .post-container .post-body .cta-block h3, .single-resources .post-container .post-body .cta-block h3, .single-press-releases .post-container .post-body .cta-block h3 {
+  font-size: 28px;
+  margin-bottom: unset;
+}
+.single-post .post-container .post-body .cta-block .hero-content, .single-resources .post-container .post-body .cta-block .hero-content, .single-press-releases .post-container .post-body .cta-block .hero-content {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+.single-post .post-container .post-body .wp-block-td-cta-banner .container, .single-resources .post-container .post-body .wp-block-td-cta-banner .container, .single-press-releases .post-container .post-body .wp-block-td-cta-banner .container {
+  padding: 0;
+}
+.single-post .post-author, .single-resources .post-author, .single-press-releases .post-author {
+  border-top: 1px solid #D0D0D0;
+}
+.single-post .post-author .author-avatar img, .single-resources .post-author .author-avatar img, .single-press-releases .post-author .author-avatar img {
+  border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .single-post .post-author .author-avatar img, .single-resources .post-author .author-avatar img, .single-press-releases .post-author .author-avatar img {
+    width: 100%;
+  }
+}
+.single-post #sticky-sidebar, .single-resources #sticky-sidebar, .single-press-releases #sticky-sidebar {
+  transition: opacity 0.25s ease-in-out;
+}
+@media screen and (min-width: 1024px) {
+  .single-post #sticky-sidebar, .single-resources #sticky-sidebar, .single-press-releases #sticky-sidebar {
+    border: 2px solid #EAEAEA;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+  }
+}
+.single-post #sticky-sidebar .share-box .social-icons .social-icon, .single-resources #sticky-sidebar .share-box .social-icons .social-icon, .single-press-releases #sticky-sidebar .share-box .social-icons .social-icon {
+  transition: opacity 0.25s ease-in-out;
+}
+.single-post #sticky-sidebar .share-box .social-icons .social-icon:hover, .single-resources #sticky-sidebar .share-box .social-icons .social-icon:hover, .single-press-releases #sticky-sidebar .share-box .social-icons .social-icon:hover {
+  opacity: 0.6;
+}
+.single-post .related-resources .btn-secondary:after, .single-resources .related-resources .btn-secondary:after, .single-press-releases .related-resources .btn-secondary:after {
+  right: auto;
+  background: url("../assets/images/icons/arrow-right-dark.svg") no-repeat center center;
+  width: 50px;
+}
+@media screen and (max-width: 639px) {
+  .single-post .related-resources .related-resource, .single-resources .related-resources .related-resource, .single-press-releases .related-resources .related-resource {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+.single-post .form-fill .mktoForm .mktoFormRow .mktoFieldDescriptor .mktoFieldWrap label, .single-post .form-fill .mktoForm .mktoFormRow .mktoFieldDescriptor.mktoFormCol:nth-child(odd) .mktoFieldWrap label, .single-resources .form-fill .mktoForm .mktoFormRow .mktoFieldDescriptor .mktoFieldWrap label, .single-resources .form-fill .mktoForm .mktoFormRow .mktoFieldDescriptor.mktoFormCol:nth-child(odd) .mktoFieldWrap label, .single-press-releases .form-fill .mktoForm .mktoFormRow .mktoFieldDescriptor .mktoFieldWrap label, .single-press-releases .form-fill .mktoForm .mktoFormRow .mktoFieldDescriptor.mktoFormCol:nth-child(odd) .mktoFieldWrap label {
+  color: #131023;
+}
+.single-post .form-fill .mktodisclaimer a, .single-resources .form-fill .mktodisclaimer a, .single-press-releases .form-fill .mktodisclaimer a {
+  text-decoration: underline !important;
+}
+.single-post .form-fill .mktoHtmlText a, .single-resources .form-fill .mktoHtmlText a, .single-press-releases .form-fill .mktoHtmlText a {
+  text-decoration: underline !important;
+}
+
+.single-press-releases .post-body h1:first-child,
+.single-press-releases .post-body h1.h2 {
+  display: none;
+}
+.single-press-releases .post-body h1:first-child + p > i,
+.single-press-releases .post-body h1.h2 + p > i {
+  display: flex;
+}
+
+.wp-element-caption {
+  margin-top: 20px !important;
+  font-size: 13px;
+  line-height: 150%;
+}
+
+/*# sourceMappingURL=blog-detail.css.map */

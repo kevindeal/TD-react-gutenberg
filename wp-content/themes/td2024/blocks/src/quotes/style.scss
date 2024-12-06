@@ -1,0 +1,53 @@
+.quote {
+
+    &-rating {
+        display: flex;
+        gap: 9px;
+        margin-bottom: 40px;
+        .star {
+            width: 52px;
+            opacity: 0.33;
+            svg {
+                max-width: 100%;
+            }
+            path {
+                fill: var(--text-color, #000);
+            }
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+    &-image {
+        &:not(:empty) {
+            + .author-box {
+                margin-left: 38px;
+            }
+        }
+    }
+}
+
+.quote-image .wp-block-image.size-full {
+    margin-bottom: 0;
+}
+
+.quote-image {
+    .wp-block-image {
+        &,
+        &.size-full {
+            &,
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+
+.quote-dark {
+    .star {
+        path {
+            fill: #fff;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "td/content-image",
+  "version": "0.1.1",
+  "title": "Content Image",
+  "category": "text",
+  "icon": "admin-network",
+  "description": "A pre-formatted block for the Image within the Treasure Data content block.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "imageAlignX": {
+      "type": "string",
+      "default": "center"
+    },
+    "imageAlignY": {
+      "type": "string",
+      "default": "center"
+    },
+    "extraPadding": {
+      "type": "string",
+      "default": "0"
+    },
+    "imageLoc": {
+      "type": "string",
+      "default": "right"
+    },
+    "rowIndex": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "styles": [],
+  "example": {},
+  "parent": [
+    "td/content-section"
+  ],
+  "textdomain": "content-image",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

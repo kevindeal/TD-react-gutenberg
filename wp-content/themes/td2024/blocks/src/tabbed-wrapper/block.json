@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/tabbed-wrapper",
+	"version": "0.1.0",
+	"title": "Tabbed Wrapper",
+	"category": "text",
+	"icon": "admin-network",
+	"description": "Example block scaffolded with Create Block tool.",
+	"attributes": {
+		"tabName": {
+			"type": "string",
+			"default": "Tab Name"
+		},
+		"pushStateID": {
+			"type": "string",
+			"default": "tab-0"
+		},
+		"colorVariant": {
+			"type": "string",
+			"default": "DARK"
+		},
+		"isVisibleMobile": {
+			"type":"boolean",
+			"default": true
+		},
+		"isVisibleTablet" : {
+			"type":"boolean",
+			"default": true
+		},
+		"isVisibleDesktop" : {
+			"type":"boolean",
+			"default": true
+		},
+		"isEditorVisible": {
+			"type":"boolean",
+			"default": true
+		}
+	},
+	"parent": ["td/tabbed-content"],
+	"example": {},
+	"textdomain": "tabbed-wrapper",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

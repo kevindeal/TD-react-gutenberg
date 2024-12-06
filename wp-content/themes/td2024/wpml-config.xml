@@ -1,0 +1,82 @@
+<wpml-config>
+  <gutenberg-blocks>
+    <gutenberg-block type="td/image-grid-container" translate="1">
+      <xpath label="Image Grid Heading">//div/h2[1]</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="td/headshot-card" translate="1">
+      <xpath label="Image Card Name">//div/span[1]</xpath>
+      <xpath label="Image Card Title">//div/span[2]</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="td/table-container" translate="1">
+      <xpath label="Table Section Heading">//div/div/div/h2</xpath>
+      <xpath label="Table Section Subheading">//div/div/div/h3</xpath>
+      <xpath label="Table Title">//div/div/div/h4</xpath>
+      <xpath label="Table Heading">//div/div/div/table/thead/tr/th/h3</xpath>
+      <xpath label="CTA Button">//div/div/div/a</xpath>
+    </gutenberg-block>
+     <gutenberg-block type="td/table-cell" translate="1">
+      <xpath label="Table Cell Section Heading for Mobile">//td/@data-th</xpath>
+      <xpath label="Table Cell Value">//td/*</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="td/tabbed-content" translate="1">
+      <xpath label="Tabbed Section Heading">//div/div/div/h2</xpath>
+      <xpath label="Tab Name">//div/div/div/div/ul/li/h3</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="td/hero" translate="1">
+      <xpath label="Hero Heading">//div/div/div/h1</xpath>
+      <xpath label="Hero Subheading">//div/div/div/span</xpath>
+      <xpath label="Hero CTA 1 Text">//div/div/div/div/div[contains(@class, 'primary-btn-wrapper')]/a</xpath>
+      <xpath type="link" label="Hero CTA 1 URL">//div/div/div/div/div[contains(@class, 'primary-btn-wrapper')]/a/@href</xpath>
+      <xpath label="Hero CTA 2 Text">//div/div/div/div/div[contains(@class, 'secondary-btn-wrapper')]/a</xpath>
+      <xpath type="link" label="Hero CTA 2 URL">//div/div/div/div/div[contains(@class, 'secondary-btn-wrapper')]/a/@href</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="td/cta-banner" translate="1">
+      <xpath label="CTA Banner Eyebrow">//div/div/div/div/h4</xpath>
+      <xpath label="CTA Banner Title">//div/div/div/div/h3</xpath>
+      <xpath label="CTA Banner Subheading">//div/div/div/div/span</xpath>
+      <xpath label="CTA Banner CTA 1 Text">//div/div/div/div/div/a</xpath>
+      <xpath type="link" label="CTA Banner CTA 1 URL">//div/div/div/div/div/a/@href</xpath>
+      <xpath label="CTA Banner CTA 2 Text">//div/div/div/div/div[contains(@class, 'secondary-btn-wrapper')]/a</xpath>
+      <xpath type="link" label="CTA Banner CTA 2 URL">//div/div/div/div/div[contains(@class, 'secondary-btn-wrapper')]/a/@href</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="td/quotes" translate="1">
+      <xpath label="Quote Text">//div/div/p</xpath>
+      <xpath label="Quote Author">//div/div/div/div/p[1]</xpath>
+      <xpath label="Quote Author Title">//div/div/div/div/p[2]</xpath>
+    </gutenberg-block>
+     <gutenberg-block type="td/content-container" translate="1">
+      <xpath label="Content Section Heading">//div/h2</xpath>
+    </gutenberg-block>
+     <gutenberg-block type="td/content-content" translate="1">
+      <xpath label="Content Eyebrow">//div/div/div/div/span[contains(@class, 'eyebrow')]</xpath>
+      <xpath label="Content Heading">//div/div/div/div/h3</xpath>
+      <xpath label="Content Subheading">//div/div/div/div/span[contains(@class, 'title')]</xpath>
+      <xpath label="Content CTA 1 Text">//div/div/div/div/div/div[contains(@class, 'primary-btn-wrapper')]/a</xpath>
+      <xpath type="link" label="Content CTA 1 URL">//div/div/div/div/div/div[contains(@class, 'primary-btn-wrapper')]/a/@href</xpath>
+      <xpath label="Content CTA 2 Text">//div/div/div/div/div/div[contains(@class, 'secondary-btn-wrapper')]/a</xpath>
+      <xpath type="link" label="Content CTA 2 URL">//div/div/div/div/div/div[contains(@class, 'secondary-btn-wrapper')]/a/@href</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="td/card-container" translate="1">
+      <xpath label="Card Section Heading">//div/h2</xpath>
+    </gutenberg-block>
+     <gutenberg-block type="td/card-vertical" translate="1">
+      <xpath label="Card Eyebrow">//div/span</xpath>
+      <xpath label="Card Heading">//div/h3</xpath>
+      <xpath label="Card Content">//div/p</xpath>
+      <xpath label="Card CTA Text">//div/a</xpath>
+      <xpath type="link" label="Card CTA URL">//div/a/@href</xpath>
+    </gutenberg-block>
+     <gutenberg-block type="td/card-horizontal" translate="1">
+      <xpath label="Card Section Heading">//div/div/h2</xpath>
+        <xpath label="Card Eyebrow">//div/div/span</xpath>
+      <xpath label="Card Heading">//div/div/h3</xpath>
+      <xpath label="Card Content">//div/div/p</xpath>
+      <xpath label="Card CTA Text">//div/div/a</xpath>
+      <xpath type="link" label="Card CTA URL">//div/div/a/@href</xpath>
+    </gutenberg-block>
+    <gutenberg-block type="core/image" translate="1">
+      <xpath>//figure/figcaption</xpath>
+      <xpath>//figure/img/@alt</xpath>
+    </gutenberg-block>
+  </gutenberg-blocks>
+</wpml-config>

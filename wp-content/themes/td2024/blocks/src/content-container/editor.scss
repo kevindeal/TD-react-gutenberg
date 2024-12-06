@@ -1,0 +1,78 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-td-tutorial-cards-block {
+	border: 2px dotted #060;
+}
+
+.content-container-wrapper {
+
+	&:not(.layout-stacked) {
+
+		--image-order: 2;
+		--text-order: 1;
+
+		&.zip {
+
+			*[data-type="td/content-wrapper"] {
+				&:nth-child(even) {
+					--image-order: 1;
+					--text-order: 2;
+				}
+			}
+
+		}
+
+		&.image-left {
+			--image-order: 1;
+			--text-order: 2;
+
+			&.zip {
+
+				*[data-type="td/content-wrapper"] {
+					&:nth-child(even) {
+						--image-order: 2;
+						--text-order: 1;
+					}
+				}
+
+			}
+		}
+
+		*[data-type="td/content-section"] {
+			&:first-child {
+				order: var(--text-order);
+			}
+			&:last-child {
+				order: var(--image-order);
+			}
+		}
+	}
+
+	&.layout-stacked {
+		--image-order: 1;
+		--text-order: 2;
+
+		*[data-type="td/content-section"] {
+			&:first-child {
+				order: var(--text-order);
+			}
+			&:last-child {
+				order: var(--image-order);
+			}
+		}
+		
+		*[data-type="td/content-wrapper"] {
+			*:not([data-type="td/content-section"])
+			.block-editor-block-list__layout {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}
+
+

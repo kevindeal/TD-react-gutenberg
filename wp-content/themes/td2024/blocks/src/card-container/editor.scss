@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-td-cards-block {
+	border: 2px dotted #060;
+}
+
+.wp-block-td-card-container {
+	>.tdcard-vertical > .block-editor-inner-blocks {
+		> .block-editor-block-list__layout {
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			gap: 15px;
+		}
+	}
+}
+
+.card-dark {
+	background-color: #131023;
+	color: #ffffff;
+}
+
+

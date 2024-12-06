@@ -1,0 +1,36 @@
+.question_answer {
+  p,ul,ol,h1,h2,h3,h4,h5,h6 {
+    //line-height: 33px!important;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 30px;
+  }
+  ol {
+    list-style: decimal;
+    padding-left: 30px;
+  }
+  b,strong {
+    font-weight: 800;
+  }
+  i,em {
+    font-style: italic;
+  }
+}
+
+.light a {
+  color: #3a61ff;
+  &:hover {
+    text-decoration: underline!important;
+  }
+}
+
+.accent a {
+  color: #5af8f5;
+
+  &:hover {
+    text-decoration: underline!important;
+  }
+}

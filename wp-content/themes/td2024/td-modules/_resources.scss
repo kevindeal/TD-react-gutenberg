@@ -1,0 +1,339 @@
+@use 'mixins';
+@use 'vars';
+
+
+.talllist ul li {
+  line-height: 36px;
+}
+
+.top-menu {
+  display: none !important;
+}
+
+.wholer {
+  background-color: #ededed;
+}
+
+.imageontheleft.versiontwo.gmq .col-lg-6.versiontwofirstcol .uncell {
+  background-color: #f7f7f7;
+}
+
+.transparent-hero .heading-text {
+  .h1 {
+    text-transform: none !important;
+  }
+
+  div.h1:after {
+    display: none !important;
+  }
+}
+
+.page-template-landing-page .site-footer .footer-last, footer .footer-last .uncell {
+  padding-bottom: 0px !important;
+}
+
+.imageontheleft.versiontwo.gmq {
+  .row.row-parent {
+    padding: 0px !important;
+  }
+
+  .col-lg-6 {
+    &.versiontwofirstcol .uncont {
+      padding: 36px !important;
+    }
+
+    &.versiontwosecondcol {
+      .row-internal.row-container {
+        margin-top: 0px !important;
+      }
+
+      padding: 0px !important;
+      border-radius: 0;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+      background-color: vars.$color-white;
+    }
+  }
+}
+
+.mktoForm {
+  max-width: 100% !important;
+  box-shadow: 0px 0px 0px !important;
+  border: 0px !important;
+}
+
+footer .site-info p {
+  text-align: center;
+}
+
+.site-footer .footer-last {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.free-copy-mobile-only-header {
+  text-align: center !important;
+}
+
+.heading-text.landingpageheading h1 {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+  .uncode_text_column {
+    p, li {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .imageontheleft.versiontwo.gmq .col-lg-6.versiontwosecondcol .heading-text {
+    padding-bottom: 30px !important;
+  }
+
+  .page-template-mkto-page .site-footer .footer-last {
+    padding-top: 30px !important;
+  }
+
+  html.firefox .transparent-hero {
+    .row.row-parent .col-lg-12.pos-middle, .uncol.style-light {
+      position: absolute;
+    }
+  }
+
+  .wpb_raw_js {
+    margin-top: 0px !important;
+  }
+
+  .navbar .btn.filled {
+    background-color: transparent !important;
+  }
+
+  .box-wrapper {
+    background-image: none !important;
+  }
+
+  .uncode_text_column {
+    p, li {
+      font-size: 14px !important;
+    }
+  }
+
+  .imageontheleft.versiontwo.gmq {
+    .row-inner {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col-lg-6 {
+      flex: 0 0 100%;
+
+      &.versiontwofirstcol {
+        order: 2;
+      }
+
+      &.versiontwosecondcol {
+        order: 1;
+      }
+    }
+  }
+
+  .mktoForm {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
+    padding-bottom: 0px !important;
+  }
+
+  .transparent-hero {
+    &:before {
+      height: 100% !important;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+      z-index: 1 !important;
+    }
+
+    .heading-text .h1 {
+      z-index: 2 !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .page-template-mkto-page .transparent-hero .heading-text .h1 {
+    max-width: 100% !important;
+    font-size: 44px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  .mktoForm .mktoFormRow .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap .mktoError {
+    top: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 480px) {
+  .page-template-mkto-page .transparent-hero .heading-text div.h1, .transparent-hero .heading-text h1 {
+    font-size: 28px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mktoForm .mktoFormRow .mktoFieldDescriptor.mktoFormCol .mktoFieldWrap .mktoError {
+    top: 20px !important;
+  }
+
+  .page-template-mkto-page .transparent-hero .heading-text div.h1, .transparent-hero .heading-text h1 {
+    font-size: 24px !important;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  .transparent-hero .heading-text .h1, *::-ms-backdrop, .transparent-hero .heading-text .h1 {
+    text-transform: none !important;
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .transparent-hero .heading-text {
+    div.h1, h1 {
+      font-size: 22px !important;
+    }
+  }
+
+  .site-footer .footer-last {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .page-template-mkto-page .transparent-hero .heading-text div.h1, .transparent-hero .heading-text h1 {
+    font-size: 24px !important;
+  }
+
+  .site-footer .footer-last {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+.callout {
+  text-align: center;
+  background-color: #0091BD;
+  padding: 40px 30px;
+  border-radius: 4px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  color: vars.$color-white;
+}
+
+.testimoni-sec {
+  background-color: #f7f7f7 !important;
+}
+
+.clicked.bullets {
+  background-color: #80808052 !important;
+}
+
+/* New Branding CSS 2020 for resource */
+
+.text-color-173912-color{
+	color: vars.$color-blue-light !important;
+}
+#bottomLink{
+	color: vars.$color-blue !important;
+}
+.callout{
+	background-color: vars.$color-purple !important;
+}
+p.mktodisclaimer {
+    font-family: "Roboto","Open Sans",Helvetica,Arial,sans-serif;
+}
+@media only screen and (max-height: 480px) and (min-width: 960px){
+.tdblock .herotitle div.h1 span {
+    font-size: 42px !important;
+}
+}
+.herotitle div.h1 span{
+	font-weight: 900 !important;
+}
+
+#menu-landing-page-menu .menu-item-button .button.filled{
+	@include mixins.for-desktop-up {
+		background-color: vars.$color-blue-light !important;
+	    border-radius: 9px !important;
+	    border-width: 2px !important;
+	    border-color: vars.$color-blue-light !important;
+	    border-style: solid !important;
+    	color: vars.$color-white !important;
+	}
+}
+
+#menu-landing-page-menu .menu-item-button .button.filled span{
+	@include mixins.for-desktop-up {
+		font-size: 14px;
+	}
+}
+
+#menu-landing-page-menu .menu-item-button .button.filled {
+	&:hover,
+	&:focus {
+	background-color: vars.$color-blue !important;
+    border-color: vars.$color-blue !important;
+    color: vars.$color-white !important;
+	}
+}
+
+.mktoForm .mktoButtonRow .mktoButtonWrap .mktoButton, .mktoForm .mktoButtonRow .mktoButtonWrap.mktoCupidGreen .mktoButton, .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton{
+		background-color: vars.$color-blue-light !important;
+	    border-radius: 9px !important;
+	    border-width: 2px !important;
+	    border-color: vars.$color-blue-light !important;
+	    border-style: solid !important;
+    	color: vars.$color-white !important;
+}
+
+.mktoForm .mktoButtonRow .mktoButtonWrap .mktoButton, .mktoForm .mktoButtonRow .mktoButtonWrap.mktoCupidGreen .mktoButton, .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton{
+	@include mixins.for-desktop-up {
+		font-size: 14px;
+	}
+}
+
+.mktoForm .mktoButtonRow .mktoButtonWrap .mktoButton, .mktoForm .mktoButtonRow .mktoButtonWrap.mktoCupidGreen .mktoButton, .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
+	&:hover,
+	&:focus {
+	background-color: vars.$color-blue !important;
+    border-color: vars.$color-blue !important;
+    color: vars.$color-white !important;
+    border-radius: 9px !important;
+	    border-width: 2px !important;
+	    border-style: solid !important;
+	}
+}
+
+.transparent-hero .heading-text .h1 span {
+	font-weight: 600 !important;
+    font-size: 42px !important;
+    text-transform: none !important;
+    line-height: 1.2;
+    max-width: 700px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 span,
+h6, p, ul>li {
+	font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.font-377618 {
+font-family: "Roboto", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+@media only screen and (min-width: 960px) {
+  .transparent-hero .heading-text .h1 span {
+    font-size: 52px !important;
+  }
+}

@@ -1,0 +1,39 @@
+.wp-block-td-card-horizontal {
+    font-family: "Inter", sans-serif;
+    --arrow-height: 33px;
+    --arrow-width: calc(var(--arrow-height) * 1.61);
+    --gap: 11px;
+    /*
+    display: grid;
+    grid-template-columns: minmax(auto,400px) 1fr;
+    grid-template-rows: auto;
+    */
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+
+    >span {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btn-secondary {
+        display: block;
+        position: relative;
+        padding-bottom: calc(var(--arrow-height) + var(--gap));
+        font-weight: 400;
+        line-height: 1.45;
+
+        &:after {
+            position: absolute;
+            top: auto;
+            left: 0;
+            bottom: 0;
+            right: auto;
+            width: var(--arrow-width);
+            height: var(--arrow-height);
+            transform: translateX(-8%);
+        }
+    }
+}

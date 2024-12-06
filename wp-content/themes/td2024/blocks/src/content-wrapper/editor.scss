@@ -1,0 +1,43 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-td-tutorial-cards-block {
+	border: 2px dotted #060;
+}
+
+*[data-type="td/content-wrapper"] {
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+	font-family: "Inter", sans-serif;
+	padding: 110px 40px;
+
+	*:not([data-type="td/content-section"]) {
+		.block-editor-block-list__layout {
+			display: flex;
+			min-height: 100%;
+		}
+	}
+
+	*[data-type="td/content-section"] {
+		>.block-editor-inner-blocks {
+			display: flex;
+			//align-items: center;
+			min-height: 100%;
+		}
+	}
+
+	.hero-text  {
+		display: flex;
+		flex-direction: column;
+		//gap: 2rem;
+	}
+
+	.title {
+		background: none;
+	}
+
+}

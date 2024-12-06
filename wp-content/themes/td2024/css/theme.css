@@ -1,0 +1,125 @@
+:root {
+  --container-max-w: 100vw;
+  --container-px: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 640px) {
+  :root {
+    --container-max-w: 640px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --container-max-w: 768px;
+    --container-px:40px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --container-max-w: 1024px;
+    --container-px: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --container-max-w: 1280px;
+    --container-px: 110px;
+  }
+}
+@media (min-width: 1536px) {
+  :root {
+    --container-max-w: 1536px;
+    --container-px: 110px;
+  }
+}
+
+body {
+  --vw: calc(100vw - var(--scrollbarWidth, 0));
+}
+
+.container {
+  padding: 0 var(--container-px);
+}
+@media screen and (max-width: 639px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+a.text-link {
+  transition: 0.2s ease-in-out;
+}
+a.text-link:hover {
+  color: #3A61FF;
+}
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 70deg;
+}
+.btn-primary {
+  --a: 70deg;
+  --Button-Radius: 75px;
+  --Button-Gradient-Stroke: linear-gradient(var(--a), rgb(58, 97, 255) 10%, #FFFFFFFF 50%, rgb(58, 97, 255) 90%);
+  --Button-Gradient-Fill: linear-gradient(98deg, #131023 6.85%, #3A61FF 100.36%);
+  color: #FFFFFF;
+  width: fit-content !important;
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+  background-image: var(--Button-Gradient-Fill), var(--Button-Gradient-Stroke);
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-color: rgba(0, 0, 0, 0);
+  background-size: 200% auto, 100% auto;
+  transition: --a 0.5s ease-in-out, background-size 0.5s ease-in-out, background-position 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+.btn-primary:hover {
+  --a: -5deg;
+  background-size: 100% auto, 100% auto;
+}
+
+.btn-secondary > span, .btn-secondary.arrow-white > span {
+  white-space: nowrap;
+}
+.btn-secondary > span:after, .btn-secondary.arrow-white > span:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.btn-secondary > span:after, .btn-secondary:after {
+  transition: transform 0.2s ease-in-out;
+}
+.btn-secondary > span:after, .btn-secondary:after, .btn-secondary.arrow-white > span:after, .btn-secondary.arrow-white:after {
+  position: relative;
+  top: 0.179em;
+  right: auto;
+  left: 0.5em;
+  height: 1em;
+  width: auto;
+  aspect-ratio: 21/13;
+  background-size: auto 96%;
+  background-position: left top;
+}
+@media screen and (min-width: 1024px) {
+  .btn-secondary > span:after, .btn-secondary:after, .btn-secondary.arrow-white > span:after, .btn-secondary.arrow-white:after {
+    background-size: auto 100%;
+    height: 0.75em;
+    top: 0.05em;
+    left: 0.33em;
+  }
+}
+.btn-secondary:hover > span:after, .btn-secondary:hover:after {
+  transform: translateX(5px);
+}
+
+*[data-href]:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=theme.css.map */

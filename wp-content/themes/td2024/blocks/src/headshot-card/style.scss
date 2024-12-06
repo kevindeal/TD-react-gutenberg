@@ -1,0 +1,40 @@
+.wp-block-image.size-full {
+    margin-bottom: 20px;
+}
+
+
+.wp-block-td-card-container .card-outer {
+    
+    &:first-of-type {
+        margin-left: 0;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    /*
+    .btn-primary {
+        background: linear-gradient(98deg, #131023 6.85%, #252D6E 100.36%);
+    }
+    */
+    
+}
+.wp-block-image.size-full {
+    height: auto; 
+}
+.image-only {
+    .wp-block-image.size-full {
+        margin-bottom: 0;
+    }
+}
+
+.card-title.numeric {
+    font-size: 85px;
+}
+
+.social-link{
+    opacity: 0.75;
+    &:hover{
+        opacity: 1.0;
+    }
+}

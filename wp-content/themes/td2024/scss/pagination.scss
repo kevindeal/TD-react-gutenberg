@@ -1,0 +1,22 @@
+.pagination {
+
+    .page-numbers {
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 35px;
+
+        &.current {
+            color: #3A61FF;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.prev, &.next {
+            width: 35px;
+        }
+        svg {
+            width: 100%;
+        }
+    }
+}

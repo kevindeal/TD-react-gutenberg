@@ -1,0 +1,52 @@
+{
+    "key": "group_6658a0616210e",
+    "title": "Press Release CTA Block",
+    "fields": [
+        {
+            "key": "field_6658a06161bff",
+            "label": "CTA",
+            "name": "press_release_cta",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_6627e28e65395",
+                "field_6627e30465397",
+                "field_6627e31465398",
+                "field_6627e32a65399",
+                "field_6627e3af6539b",
+                "field_6627e38e6539a"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "press-releases"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1717084390
+}

@@ -1,0 +1,112 @@
+#BambooHR {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.BambooHR-ATS {
+  color: #131023;
+
+  &-board {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'ABC Arizona Flare Light', serif;
+    }
+
+    h2 {
+      font-size: 50px!important;
+      line-height: 1.3;
+    }
+  }
+  
+  p {
+    font: 16px 'Inter', sans-serif;
+    line-height: 1.5;
+  }
+  
+  &-Department-Header {
+    font: 35px 'Inter', sans-serif;
+    font-weight: 600!important;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #131023;
+  }
+
+  &-Jobs-List {
+    border-radius: none!important;
+    width: 100%;
+    box-shadow: none!important;
+    padding: 0!important;
+    margin: 0 0 10px 0;
+  }
+
+  &-Jobs-Item {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  &-Location {
+    color: #131023;
+  }
+}
+
+.BambooHR-ATS-board > ul > li a {
+  color: #131023;
+}
+
+/* Style for the links */
+.BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-right: 10px; /* Add margin to separate the button */
+}
+
+/* Style for the button-like pseudo-element */
+.BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li a:after {
+  content: 'Apply'; /* Button text */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 30px;
+  background-color: #131023; /* Blue */
+  color: white;
+  border-radius: 75px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Hover effect for the pseudo-element */
+.BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li a:hover:after {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Active effect for the pseudo-element */
+.BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li a:active:after {
+  background-color: #004380; /* Even darker blue on active */
+}
+
+/* Focus effect for the pseudo-element */
+.BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li a:focus:after {
+  outline: none;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 767px) {
+  .BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li .BambooHR-ATS-Location {
+    display: block; /* Ensure the span is a block element */
+    margin-bottom: 20px; /* Add margin to separate the button on mobile */
+  }
+
+  .BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li a {
+    margin-bottom: 10px; /* Add margin to separate the button on mobile */
+  }
+
+  .BambooHR-ATS-board ul.BambooHR-ATS-Jobs-List li a:after {
+    position: relative; /* Change position to relative for mobile screens */
+    display: block; /* Make the pseudo-element a block element */
+    margin-top: 10px; /* Add margin to separate the button from the link */
+  }
+}

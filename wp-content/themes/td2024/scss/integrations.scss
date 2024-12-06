@@ -1,0 +1,51 @@
+.tax-product_cat, .post-type-archive-product {
+    .product.type-product {
+        list-style-type: none;
+    }
+    .btn-secondary {
+        &:after {
+            background: url('../assets/images/icons/arrow-white-lg.svg') no-repeat center center;
+            background-size: auto 100%;
+            margin-top: -3px;
+            width: 34px;     
+            height: 20px;
+            top: auto !important;
+            right: -20px;
+            bottom: auto !important;
+            @media screen and (min-width: 768px) {
+                width: 38px;
+                height: 23px;
+            }
+        }
+    }
+    .border-right {
+        border-right: 2px solid #DBDBDC;
+        @media screen and (max-width: 991px) {
+            border-right: none;
+            
+        }
+    }
+    .sidebar-widgets {
+        padding-right: 20px;
+        @media screen and (max-width: 992px) {
+            padding-right: 0;
+        }
+        .brw-product_cat {
+            .integration_cat {
+                .integrationcat {
+                    line-height: 1.25;
+                    margin-bottom: 15px;
+                    display: block;
+                    .intcus_term_parent_0.intcus_term_depth_0 {
+                        padding: 10px 15px;
+                        
+                        &.checked {
+                            background-color: #F4F5F7;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

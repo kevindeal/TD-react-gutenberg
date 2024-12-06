@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "td/content-section",
+  "version": "0.1.0",
+  "title": "Content Section",
+  "category": "text",
+  "icon": "id",
+  "description": "A wrapper for items in the content block.",
+  "attributes": {
+    "colorVariant": {
+      "type": "string",
+      "default": "DARK"
+    },
+    "defaultContent": {
+      "type": "string",
+      "default": "card"
+    },
+    "colSpan": {
+      "type": "number",
+      "default": 1
+    },
+    "layout": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "imageAlignX": {
+      "type": "string",
+      "default": "center"
+    },
+    "imageAlignY": {
+      "type": "string",
+      "default": "center"
+    },
+    "imageLoc": {
+      "type": "string",
+      "default": "right"
+    },
+    "rowIndex": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "example": {},
+  "textdomain": "content-section",
+  "parent": [
+    "td/content-wrapper"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,123 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-td-tutorial-cards-block {
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 1rem;
+	padding: 2px;
+	background-color: #FFBB00;
+	color: #000036;
+
+	&.is-style-red {
+		background-color: #ff4400;
+		color: #ffffff;
+	}
+	&.is-style-green {
+		background-color: #03210a;
+		color: #ffffff;
+	}
+}
+
+
+.tab-dark {
+	background-color: #131023;
+	color: #ffffff;
+}
+
+.tab-container {
+	min-height: 350px;
+}
+
+.tab-wrapper{
+	display: flex;
+}
+
+.tab-wrapper-vertical {
+	.tab-links {
+		@media screen and (min-width: 640px) {
+			margin-right: 20px;
+		}
+		>li{
+			padding-left: 0;
+			list-style: none;
+		}
+	}
+}
+
+.tab-wrapper-horizontal {
+	.tab-links {
+		border-bottom-color: white;
+		padding-bottom: 10px;
+		>li{
+			padding-left: 0;
+			list-style: none;
+		}
+	}
+}
+
+.tab-light .tab-links{
+	border-bottom-color: #131023;
+}
+
+.tab-container{
+	min-height: 350px;
+}
+
+.tab-links li.active {
+	h3 {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+}
+
+.tab-links li {
+	h3 {
+		cursor: pointer;
+	}
+}
+
+.tab-links{
+	scrollbar-width: none;
+}
+
+ .scroll-right-wrapper {
+	height:84px;
+	width: 40px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&.scroll-dark {
+		background-color: #131023;
+		color: #fff;
+		.scroll-right-arrow{
+			&:before {
+				content: '';
+				background: url('../../../assets/images/icons/arrow-right-white.svg');
+				height: 21px;
+				width: 33px;
+				background-size:contain;
+				display: block;
+			}
+		}
+	}
+	&.scroll-light {
+		background-color: #ffffff;
+		color: #131023;
+		.scroll-right-arrow{
+			&:before {
+				content: '';
+				background: url('../../../assets/images/icons/arrow-right-dark.svg');
+				height: 21px;
+				width: 33px;
+				background-size:contain;
+				display: block;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,120 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/table-container",
+	"version": "0.1.0",
+	"title": "Table Container",
+	"category": "text",
+	"icon": "id",
+	"description": "A container for easily populating table objects",
+	"attributes": {
+		"blockId" : {
+			"type": "string"
+		},
+		"colorVariant": {
+			"type": "string",
+			"default": "LIGHT"
+		},
+		"layout": {
+			"type": "string",
+			"default": "colored"
+		},
+		"vSplit": {
+			"type":"string",
+			"default": "50/50"
+		},
+		"heading": {
+			"type": "string",
+			"default": "Heading Text"
+		},
+		"displayTitleOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayTitleOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayTitleOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"subheading": {
+			"type": "string",
+			"default": "Subheading Text"
+		},
+		"displaySubheadOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displaySubheadOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displaySubheadOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"subtitle": {
+			"type": "string",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"displaySubtitleOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displaySubtitleOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displaySubtitleOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"ctaText": {
+			"type": "string",
+			"default": "CTA Text"
+		},
+		"ctaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"displayCTAOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayCTAOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayCTAOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"tableNumColumns" : {
+			"type" : "number",
+			"default": 3
+		},
+		"tableNumRows" : {
+			"type" : "number",
+			"default": 3
+		},
+		"displayHeaders": {
+			"type": "boolean",
+			"default": true
+		},
+		"tableHeaders" : {
+			"type" :"array",
+			"default": [
+				"Heading 1",
+				"Heading 2",
+				"Heading 3"
+			]
+		}
+	},
+	"example": {},
+	"textdomain": "table-container",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

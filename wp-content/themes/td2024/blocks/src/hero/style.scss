@@ -1,0 +1,33 @@
+/*
+.btn-secondary {
+    &:after {
+        background: url(/assets/images/icons/arrow-dark-thin.svg) no-repeat center center;
+        top: 7px;
+        right: -30px;
+        width: 38px;
+        height: 23px;
+    }
+    &.arrow-only:after {
+        right: auto;
+        left: 0;
+    }
+}
+
+.btn-primary {
+    background: linear-gradient(98deg, #131023 6.85%, #252D6E 100.36%);
+}
+
+*/
+
+.hero-container {
+    max-width: 100%; /* Set a pixel value instead if no parent container*/
+    margin: 0 auto; /* Center the container */
+}
+
+.hero-inner-blocks .card-container {
+    flex: 1
+}
+
+.image-grid-photo .wp-block-image img{
+    border-radius: 20px;
+}

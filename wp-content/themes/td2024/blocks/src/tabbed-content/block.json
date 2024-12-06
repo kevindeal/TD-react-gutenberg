@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/tabbed-content",
+	"version": "0.1.0",
+	"title": "Tabbed Content",
+	"category": "text",
+	"icon": "admin-network",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"anchor": true
+	},
+	"attributes": {
+		"colorVariant": {
+			"type": "string",
+			"default": "DARK"
+		},
+		"orientation": {
+			"type": "string",
+			"default": "horizontal"
+		},
+		"referenceId": {
+			"type":"string"
+		},
+		"vSplit": {
+			"type":"string",
+			"default":"25/75"
+		},
+		"title": {
+			"type": "string"
+		},
+		"displayTitleOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayTitleOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayTitleOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"numTabs": {
+			"type":"integer",
+			"default": 3
+		},
+		"tabInfo":{
+			"type":"array",
+			"default": [{ "tabName": "Tab Name 1", "pushStateID": "push-state-0"}, { "tabName": "Tab Name 2", "pushStateID": "push-state-1"}, { "tabName": "Tab Name 3", "pushStateID": "push-state-2"}]
+		}
+	},
+	"example": {},
+	"textdomain": "tabbed-content",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

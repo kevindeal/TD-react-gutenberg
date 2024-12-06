@@ -1,0 +1,53 @@
+/*
+.btn-secondary {
+    &:after {
+        background: url(/assets/images/icons/arrow-dark-thin.svg) no-repeat center center;
+        top: 7px;
+        right: -41px;
+        width: 38px;
+        height: 23px;
+    }
+    &.arrow-only:after {
+        right: auto;
+        left: 0;
+    }
+}
+
+.btn-primary {
+    background: linear-gradient(98deg, #131023 6.85%, #252D6E 100.36%);
+}
+*/
+
+.hero-container {
+    max-width: 100%; /* Set a pixel value instead if no parent container*/
+    margin: 0 auto; /* Center the container */
+}
+
+.hero-inner-blocks .card-container {
+    flex: 1
+}
+
+.content-container-wrapper {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+.content-section__subheading {
+    max-width: 57ch;
+    a {
+        text-decoration: underline !important;
+    }
+}
+
+.content-wrapper, .content-container-wrapper {
+    .content-section {
+        .content-image-wrapper {
+            .wp-block-image {
+                img {
+                    min-height: 150px !important;
+                    width: auto !important;
+                }
+            }
+        }
+    }
+}

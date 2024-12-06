@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/quotes",
+	"version": "0.1.1",
+	"title": "Quotes",
+	"category": "text",
+	"icon": "admin-network",
+	"description": "A module that displays a single quote, or a slider of quotes if more than one is provided.",
+	"supports": {
+		"html": false
+	},
+    "attributes": {
+		"stars": {
+			"type": "string",
+			"default": "0"
+		},
+		"maxStars": {
+			"type": "number",
+			"default": 5
+		},
+		"ctaText": {
+			"type": "string",
+			"default": ""
+		},
+		"ctaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonTargetBlank": {
+			"type": "boolean",
+			"default": false
+		},
+		"textarea": {
+			"type": "string",
+			"default": ""
+		},
+		"authorCompany": {
+			"type": "string",
+			"default": ""
+		},
+		"author": {
+			"type": "string",
+			"default": ""
+		},
+		"authorTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"sliderSpeed": {
+			"type": "number",
+			"default": 500
+		},
+		"showBodyOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showBodyOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showBodyOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showAuthorOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showAuthorOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showAuthorOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showQuoteImageOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showQuoteImageOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"showQuoteImageOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		}
+	},
+    "textdomain": "quotes",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+
+}

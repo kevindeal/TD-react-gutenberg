@@ -1,0 +1,17 @@
+.resources_container {
+    .image-wrapper {
+        img {
+            aspect-ratio: 467 / 450;
+            object-fit: cover;
+        }
+    }
+    .content-wrapper {
+        a {
+            img {
+                @media screen and (max-width:1023px) {
+                    width: 36px;
+                }
+            }
+        }
+    }
+}

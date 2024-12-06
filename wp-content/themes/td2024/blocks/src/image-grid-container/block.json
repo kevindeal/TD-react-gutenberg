@@ -1,0 +1,95 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "td/image-grid-container",
+	"version": "0.1.0",
+	"title": "Image Grid",
+	"category": "text",
+	"icon": "admin-network",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "div.td-alert-text"
+		},
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"headingText": {
+			"type": "string",
+			"default": "Image Grid Heading"
+		},
+		"displayHeadingOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayHeadingOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayHeadingOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"iconName": {
+			"type": "string"
+		},
+		"showHeading": {
+			"type": "boolean"
+		},
+		"transparentBackground": {
+			"type": "boolean",
+			"default": false
+		},
+		"rows": {
+			"type": "number",
+			"default": 1
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"colorVariant": {
+			"type": "string",
+			"default": "DARK"
+		},
+		"cardType": {
+			"type": "string",
+			"default": "td/card-vertical"
+		},
+		"displayOnMobile" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayOnTablet" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"displayOnDesktop" : {
+			"type": "boolean",
+			"default" : true
+		},
+		"columnsOnMobile": {
+			"type": "number",
+			"default": 2
+		},
+		"columnsOnTablet": {
+			"type": "number",
+			"default": 3
+		},
+		"columnsOnDesktop": {
+			"type": "number",
+			"default": 4
+		}
+	},
+	"example": {},
+	"textdomain": "image-grid-container",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

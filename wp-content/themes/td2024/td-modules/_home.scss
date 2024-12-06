@@ -1,0 +1,709 @@
+@use 'mixins';
+@use 'vars';
+
+p:empty {
+	display: none;
+}
+
+
+.row-menu {
+	&.limit-width {
+		//max-width: 100% !important; //allow global nav memnu to span entire width of the viewport
+		max-width: 1680px;
+	}
+}
+
+.tdblock {
+	@include mixins.for-phone-and-tablet-only {
+		padding: 0 !important;
+	}
+
+	.btn {
+		&.filled {
+			white-space: nowrap;
+		}
+	}
+
+	.hero_button_second {
+		@include mixins.for-phone-and-tablet-only {
+			margin-top: 10px !important
+		}
+	}
+
+	.wpb_raw_code {
+		position: absolute !important;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100%;
+		height: 100%;
+		min-height: 85vh;
+		max-height: 100vh;
+
+		.wpb_wrapper {
+			position: absolute !important;
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+		.backgroundpanel {
+			position: absolute !important;
+			left: 0 !important;
+			right: 0 !important;
+			margin: 0 auto;
+			width: auto !important;
+			height: auto !important;
+			min-height: 100% !important;
+			min-width: 100% !important;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+	}
+
+	.herobg {
+		background: 0 0 !important
+	}
+
+	.herodesc {
+		p {
+			@include mixins.for-desktop-up {
+				max-width: 100% !important
+			}
+		}
+	}
+}
+
+.home {
+	.tdblock {
+		margin-top: 0 !important;
+
+		.vc_row {
+			&.Secone {
+				min-height: 600px !important;
+				height: 100% !important;
+				display: table;
+				background-color: transparent !important;
+
+				@include mixins.for-phone-and-tablet-only {
+					min-height: 30vh !important;
+				}
+
+				.row {
+					&.row-parent {
+						height: 100% !important;
+						display: table;
+					}
+				}
+
+				.mobilebtn-holder {
+					@include mixins.for-small-screen {
+						display: block !important;
+						width: 100%;
+						text-align: center;
+					}
+
+					@include mixins.for-tablet-landscape-up {
+						display: none !important;
+					}
+
+					.mobilebtn {
+						&.btn {
+							@include mixins.for-small-screen {
+								transform-origin: center !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.bottomspace {
+			height: 0px !important;
+		}
+
+		.herobg {
+			a {
+				display: none !important;
+			}
+		}
+
+		.extraheight {
+			@include mixins.for-phone-and-tablet-only {
+				height: 15vh !important;
+			}
+
+			@include mixins.for-small-desktop {
+				height: 10vh !important;
+			}
+		}
+
+		.background-inner {
+			@include mixins.for-small-screen {
+				background-size: 100px 100px !important;
+			}
+
+			.background-wrapper {
+				&:before {
+					@include mixins.for-small-screen {
+						position: absolute;
+						top: 0px;
+						right: 0px;
+						left: 0px;
+						width: 100%;
+						height: 100%;
+						content: '';
+						background: #66baf8 !important;
+						background: -moz-linear-gradient(-45deg, #66baf8 1%, #006ba9 100%) !important;
+						background: -webkit-linear-gradient(-45deg, #66baf8 1%, #006ba9 100%) !important;
+						background: linear-gradient(135deg, #66baf8 1%, #006ba9 100%) !important;
+					}
+				}
+			}
+		}
+	}
+	
+	.vc_row {
+		&.promo {
+			.row {
+				&.row-parent {
+					padding: 0 !important;
+				}
+			}
+		}
+	}
+
+	.homebanner {
+		.col-lg-2 {
+			@include mixins.for-small-screen {
+				margin-top: 20px !important;
+			}
+		}
+	}
+
+	.dummybook {
+		max-height: 64px !important;
+		bottom: 0px !important;
+	}
+
+	.vc-acf-field-picker-field-type-repeater {
+		margin-top: 0 !important;
+	}
+
+	.whys {
+		.whysdefault {
+			display: none;
+		}
+	}
+
+	.reporttilewrapper {
+		@include mixins.for-small-screen {
+			max-width: 546px;
+		}
+	}
+
+	.hero-content {
+		@include mixins.for-phone-and-tablet-only {
+			padding: 0 36px !important
+		}
+
+		&.sectwo {
+			padding: 0;
+			min-height: 450px;
+			background-color: #fff !important;
+		}
+
+		.col-lg-12 {
+			.uncont {
+				&.no-block-padding {
+					&.col-custom-width {
+						@include mixins.for-desktop-up {
+							max-width: 1200px !important
+						}
+					}
+				}
+			}
+		}
+
+		.row-inner {
+			@include mixins.for-phone-and-tablet-only {
+				padding: 0 !important;
+			}
+		}
+	}
+}
+
+.firefox {
+	.home {
+		.tdblock {
+			.vc_row {
+				&.Secone {
+					@include mixins.for-tablet-landscape-up {
+						height: 600px !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.row {
+	div[class*=col-lg-] {
+
+		&.align_left,
+		&.align_center_mobile {
+			> .uncol {
+				> .uncoltable {
+					> .uncell {
+						.uncont {
+							.btn {
+								&.mobilebtn {
+									@include mixins.for-small-screen {
+										transform-origin: center !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.row-inner {
+			.align_center_mobile {
+				> .uncol {
+					> .uncoltable {
+						> .uncell {
+							> .uncont {
+								.mobilebtn {
+									@include mixins.for-small-screen {
+										transform-origin: center !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.overlay-search {
+	display: none !important;
+	height: 0 !important;
+}
+
+.main-container {
+	.row-container {
+		.col-no-gutter {
+			> .row-inner {
+				> div {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+
+		.row-parent {
+			.uncont {
+				> .herotitle {
+					&:first-child {
+						@include mixins.for-phone-and-tablet-only {
+							margin-top: 10px !important
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.logoarray {
+	.column_child {
+		@include mixins.for-small-screen {
+			max-width: 50%;
+			padding-top: 0 !important;
+			display: inline-block;
+		}
+	}
+}
+
+.whys {
+	.vc-acf-field-picker-field {
+		margin-top: 0 !important;
+
+		.wpb_raw_code {
+			text-align: center;
+
+			.icon {
+				width: 96px;
+				height: 96px;
+			}
+		}
+
+		.icon-box-content {
+			h5 {
+				text-align: center;
+				min-height: 108px;
+			}
+
+			p {
+				text-align: center;
+				font-size: 16px !important;
+			}
+		}
+
+		.row {
+			&.row-parent {
+				padding: 0 !important;
+
+				@include mixins.for-small-desktop {
+					max-width: 100% !important
+				}
+			}
+		}
+	}
+
+	.icon-box-field {
+		.row {
+			&.row-parent {
+				padding: 0 !important;
+			}
+		}
+	}
+}
+
+.why-heading {
+	.row.row-parent {
+		padding-top: 90px;
+	}
+
+	.btn {
+		@include mixins.for-small-screen {
+			transform-origin: center !important;
+		}
+	}
+}
+
+.resources-heading {
+	.heading-text {
+		div {
+			> p {
+				@include mixins.for-tablet-landscape-up {
+					line-height: 40px;
+				}
+			}
+		}
+	}
+}
+
+.resources {
+	&.homeresources {
+		.tallimage {
+			img {
+				@include mixins.for-tablet-landscape-up {
+					max-height: 315px !important
+				}
+
+				@include mixins.for-desktop-up {
+					max-height: 283px;
+				}
+			}
+		}
+	}
+}
+
+.modal {
+	position: fixed;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+
+	.close {
+		position: absolute;
+		top: 20%;
+		right: 18%;
+		width: 24px !important;
+		height: 24px !important;
+		color: vars.$color-white;
+		font-size: 28px;
+		font-weight: bold;
+
+		@include mixins.for-phone-and-tablet-only {
+			right: 20px !important;
+			width: 24px !important;
+			height: 24px !important;
+		}
+
+		@include mixins.for-phone-only {
+			right: 10px !important;
+			width: 24px !important;
+			height: 24px !important;
+		}
+
+		&:hover,
+		&:focus {
+			color: vars.$color-dark;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
+
+#videoframe {
+	position: absolute;
+	top: 20%;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	width: 60% !important;
+	max-width: 890px;
+	height: 500px !important;
+	border: 0px;
+
+	@include mixins.for-phone-and-tablet-only {
+		width: 80% !important;
+	}
+}
+
+.popup {
+	cursor: pointer;
+	white-space: nowrap;
+
+	&.noformat {
+		position: relative;
+		display: inline-block;
+		top: auto;
+		left: auto;
+		transform: translate(0,0);
+	}
+}
+
+.awards {
+	.wpb_raw_html {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #005c81;
+		background-image: linear-gradient(-90deg, rgb(0, 145, 190) 0%, rgb(0, 94, 132) 48%, rgb(0, 43, 73) 100%);
+	}
+
+	.backgroundpanel {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.row {
+		&.row-parent {
+			padding: 0px !important;
+		}
+	}
+
+	.row-internal {
+		&.row-container {
+			padding-top: 60px;
+			padding-bottom: 90px;
+
+			@include mixins.for-desktop-up {
+				max-width: 1200px;
+				margin: 0px auto;
+			}
+
+			&.awardaccolade {
+				padding-bottom: 0;
+				
+				& + .row-internal {
+					padding-top: 0!important;
+				}
+			}
+
+			&.first {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	img {
+		&.b-lazy {
+			&.b-loaded {
+				transform: translate(-30px, 0);
+			}
+		}
+	}
+
+	.col-lg-8 {
+		img {
+			@include mixins.for-phone-and-tablet-only {
+				width: 300px !important;
+			}
+		}
+	}
+
+	.uncode_text_column {
+		h5 {
+			@include mixins.for-phone-and-tablet-only {
+				font-size: 20px !important;
+			}
+		}
+	}
+
+	.wpb_raw_code {
+		&.wpb_content_element {
+			&.wpb_raw_html {
+				position: absolute;
+				min-height: 400px;
+			}
+		}
+	}
+	
+	h6 {
+		font-size: 22px;
+		
+		@include mixins.for-phone-and-tablet-only {
+			font-size: 16px;
+    	padding: 0 36px;
+		}
+	}
+}
+
+.award-header-img {
+	margin-left: 60px;
+}
+
+.customers.usecase {
+	& > .row.limit-width {
+		&.row-parent {
+			padding: 36px;
+		}
+	}
+}
+
+.homebanner {
+	.btn-container {
+		text-align: center;
+	}
+
+	.col-lg-1 {
+		.uncol {
+			&.style-light {
+				@include mixins.for-phone-and-tablet-only {
+					width: 100%;
+					height: 100%;
+					display: table;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		.uncoltable {
+			@include mixins.for-phone-and-tablet-only {
+				margin-top: 10px;
+				width: 100%;
+				height: 100%;
+				display: table;
+				vertical-align: middle;
+			}
+		}
+
+		.uncell {
+			@include mixins.for-phone-and-tablet-only {
+				vertical-align: middle !important;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.uncont {
+			@include mixins.for-phone-and-tablet-only {
+				width: 100%;
+				height: 100%;
+				display: table;
+				vertical-align: middle;
+			}
+		}
+
+		.uncode_text_column {
+			@include mixins.for-phone-and-tablet-only {
+				display: table;
+				width: 100%;
+				height: 100%;
+				vertical-align: middle;
+			}
+		}
+
+		p {
+			@include mixins.for-phone-and-tablet-only {
+				width: 100%;
+				height: 100%;
+				display: table;
+				vertical-align: middle;
+			}
+		}
+
+		img {
+			@include mixins.for-phone-and-tablet-only {
+				width: 100% !important;
+				height: 100%;
+				display: table;
+			}
+		}
+	}
+}
+
+h5,
+h6 {
+	&.reportheading {
+		@include mixins.for-phone-and-tablet-only {
+			font-size: 24px;
+		}
+
+		+ .texter {
+			min-height: 160px;
+		}
+	}
+}
+
+.inlinebuttons {
+	.btn-container {
+		position: relative;
+		margin-left: 9px;
+		margin-right: 9px;
+		display: inline-block;
+		vertical-align: middle;
+
+		.btn-color-173912.btn-flat:active,
+		.btn-color-173912.btn-flat:not(.btn-hover-nobg):focus,
+		.btn-color-173912.btn-flat:not(.btn-hover-nobg):hover {
+			background-color: vars.$color-white !important;
+			color: vars.$color-blue !important;
+		}
+	}
+}
+
+.event-des {
+	min-height: 50px !important;
+}
+
+.homeheading {
+	@include mixins.for-small-desktop {
+		font-size: 52px !important;
+	}
+}
+
+//following are homepage only specific width/height or browser media query combinations
+@media only screen and (min-height: 730px) and (min-width: 960px) {.tdblock .vc_row.Secone {min-height: 600px !important;}}@media only screen and (max-width: 1100px) and (min-width: 980px) {.post-content .homebanner .btn {font-size: 16px !important;}}@media only screen and (max-width: 979px) and (min-width: 960px) {.post-content .homebanner .btn {font-size: 14px !important;}}@media only screen and (max-width: 1060px) and (min-width: 960px) {.homebanner .col-lg-10 {vertical-align: middle !important;}}@-moz-document url-prefix() {.orientation_portrait .tdblock .vc_row.Secone.row-container::before {top: 60px !important;}}@media only screen and (max-width: 1530px) and (min-width: 1415px) {.homebanner .heading-text h3 {font-size: 22px !important;}}@media all and (max-width: 1278px) and (min-width: 960px) {.keepRow[data-segment-id="1"] .herosub {font-size: 25px !important;}}

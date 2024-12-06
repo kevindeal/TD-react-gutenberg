@@ -1,0 +1,99 @@
+.column-item, .column-header {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #999999;
+  margin-bottom: 20px;
+}
+
+#footer-main .footer-top .footer-inner .menu .menu-item {
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1540px) {
+  .column-item, #footer-main .menu-item {
+    max-width: 130px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .footer-demo-cta .btn-primary {
+    font-size: 14px;
+  }
+}
+.column-item:first-child {
+  font-weight: 600;
+}
+
+.column-header > a:first-of-type {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.column-header:last-child {
+  border-bottom: none;
+}
+
+.sub-menu li, .column-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.utility-item {
+  padding-right: 16px;
+}
+
+.footer-line-separator {
+  border-bottom: 1px solid #999999;
+}
+
+.legal li {
+  padding-right: 16px;
+}
+
+.subfooter-menu .utility-item {
+  padding-right: 35px;
+}
+.subfooter-menu .wpml-ls-legacy-dropdown-click a.wpml-ls-item-toggle:after {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  border: none;
+  border-top: none;
+  position: relative;
+  background: url("../assets/images/icons/menu-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 16px;
+  margin-left: 15px;
+  top: 2px;
+}
+.subfooter-menu .wpml-ls-legacy-dropdown-click .wpml-ls-current-language:hover > a, .subfooter-menu .wpml-ls-legacy-dropdown-click a:focus, .subfooter-menu .wpml-ls-legacy-dropdown-click a:hover {
+  color: #FFF;
+  background: rgb(19, 16, 35);
+}
+.subfooter-menu .wpml-ls-legacy-dropdown-click .wpml-ls-current-language:hover > a span, .subfooter-menu .wpml-ls-legacy-dropdown-click a:focus span, .subfooter-menu .wpml-ls-legacy-dropdown-click a:hover span {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+}
+.subfooter-menu .wpml-ls-legacy-dropdown-click a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  border: none;
+  background-color: rgb(19, 16, 35);
+  padding: 0;
+  line-height: 1.4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.subfooter-menu .wpml-ls-legacy-dropdown-click {
+  width: 120px;
+}
+.subfooter-menu .js-wpml-ls-sub-menu.wpml-ls-sub-menu {
+  padding: 10px;
+  background: rgb(19, 16, 35);
+  border-top: 1px solid #ffffff;
+}
+
+/*# sourceMappingURL=footer.css.map */

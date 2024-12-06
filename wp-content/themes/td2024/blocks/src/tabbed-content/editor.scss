@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-td-tutorial-cards-block {
+	border: 2px dotted #060;
+}
+
+.tab-dark {
+	background-color: #131023;
+	color: #ffffff;
+}
+
+.tab-container {
+	min-height: 350px;
+}
+
+.tab-wrapper{
+	display: flex;
+}
+
+.tab-wrapper-vertical {
+	flex-direction: row;
+	.tab-links {
+		display: flex;
+		margin-right: 20px;
+		border-right-width: 2px;
+		>li{
+			padding-left: 0;
+			list-style: none;
+		}
+	}
+}
+
+.tab-wrapper-horizontal {
+	flex-direction: column;
+	.tab-links {
+		display: flex;
+		border: solid 0px;
+		border-bottom-color: white;
+		padding-bottom: 10px;
+		>li{
+			flex: 1;
+			padding-left: 0;
+			list-style: none;
+		}
+	}
+}
+
+.tab-light .tab-links{
+	border-bottom-color: black;
+}
+
+.remove-button {
+	font-size: 12px;
+    text-decoration: none;
+}
+
+

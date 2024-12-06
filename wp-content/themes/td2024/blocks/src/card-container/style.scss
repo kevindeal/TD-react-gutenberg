@@ -1,0 +1,39 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .card-container {
+	.card-vertical {
+		img {
+			margin: 0;
+			max-height: 100%;//40px;
+			width: auto;
+		}
+		&.image-only {
+			img {
+				margin: auto;
+			}
+		}
+	}
+ }
+
+.wp-block-td-cards-block {
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 1rem;
+	padding: 2px;
+	//background-color: blue;
+	color: #000036;
+
+	&.is-style-red {
+		background-color: #ff4400;
+		color: #ffffff;
+	}
+	&.is-style-green {
+		background-color: #03210a;
+		color: #ffffff;
+	}
+	
+}

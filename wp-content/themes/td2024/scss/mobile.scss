@@ -1,0 +1,17 @@
+// @media screen and (max-width: 767px) {  
+//     h2 {
+//         font-size: 30px !important;
+//         font-style: normal !important;
+//         font-weight: 300 !important;
+//         line-height: 120% !important; /* 36px */
+//     }
+// }
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%; /* 55px */
+    }
+}

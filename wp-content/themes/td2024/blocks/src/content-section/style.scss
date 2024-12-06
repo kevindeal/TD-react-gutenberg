@@ -1,0 +1,66 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+ .content-section .wp-block-image.size-full{
+    width: auto
+ }
+ .content-container-wrapper {
+   .content-wrapper:last-child {
+      padding-bottom: 0px;
+   }
+}
+.container-without-heading{
+   .content-container-wrapper {
+      .content-wrapper:first-child {
+         padding-top: 0px;
+      }
+   }
+}
+
+ @media screen and (max-width: 767px) {
+   .content-container-wrapper {
+      .content-wrapper {
+         padding-top: 60px;
+         padding-bottom: 60px;
+      }
+   }
+ }
+ @media screen and (min-width: 768px) {
+   .content-container-wrapper {
+      .content-wrapper {
+         padding-top: 80px;
+         padding-bottom: 80px;
+      }
+   }
+ }
+ @media screen and (min-width: 1024px) {
+   .content-container-wrapper {
+      .content-wrapper {
+         padding-top: 80px;
+         padding-bottom: 80px;
+      }
+   }
+ }
+ @media screen and (min-width: 1280px) {
+   .content-container-wrapper {
+      .content-wrapper {
+         padding-top: 100px;
+         padding-bottom: 100px;
+      }
+      .content-wrapper:last-child {
+         padding-bottom: 0px;
+      }
+   }
+   .container-without-heading{
+      .content-container-wrapper {
+         .content-wrapper:first-child {
+            padding-top: 0px;
+         }
+      }
+   }
+ }

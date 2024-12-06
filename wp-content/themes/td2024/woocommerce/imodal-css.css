@@ -1,0 +1,145 @@
+
+/* modal CSS */
+.imodal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 31, 43, .75)
+}
+
+.imodal .imodal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 730px;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, .5)
+}
+
+.imodal .imodal-wrapper .imodal-logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 9px 36px;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, .08)
+}
+
+.imodal .imodal-wrapper .imodal-iwrapper {
+    position: relative;
+    padding: 54px 36px
+}
+
+.imodal .imodal-wrapper .imodal-close {
+    margin: -36px -18px 0 0;
+    text-align: right
+}
+
+.imodal .imodal-wrapper .imodal-hdrwrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 36px
+}
+
+@media(min-width: 600px) {
+    .imodal .imodal-wrapper .imodal-hdrwrapper {
+        flex-flow: row nowrap
+    }
+}
+
+@media(min-width: 600px) {
+    .imodal .imodal-wrapper .imodal-hdrwrapper .imodal-hdr {
+        max-width: calc(100% - 175px)
+    }
+}
+
+.imodal .imodal-wrapper .imodal-hdrwrapper .imodal-hdr .imodal-h2 {
+    margin: 36px 0 0;
+    font: 900 32px/42px "Roboto", "Open Sans", "Helvetica", Arial, sans-serif
+}
+
+.imodal .imodal-wrapper .imodal-hdrwrapper .imodal-hdr .imodal-h5 {
+    margin: 3px 0 0;
+    font: 500 14px/14px "Roboto", "Open Sans", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase
+}
+
+.imodal .imodal-wrapper .imodal-hdrwrapper .imodal-label {
+    margin-top: 36px;
+    padding: 9px 14px 9px 36px;
+    display: inline-block;
+    font: 400 13px/13px "Roboto", "Open Sans", "Helvetica", Arial, sans-serif;
+    border: 2px solid #ebecf0;
+    border-radius: 9px;
+    background: rgba(0, 0, 0, 0) url("https://www.treasuredata.com/wp-content/uploads/imodal-integration-3.svg") 16px 11px/10px 10px no-repeat;
+}
+
+.imodal .imodal-wrapper .imodal-hdrwrapper .imodal-label.integrationtwo {
+    background-image: url("https://www.treasuredata.com/wp-content/uploads/imodal-integration-2.svg")
+}
+
+.imodal .imodal-wrapper .imodal-hdrwrapper .imodal-label.integrationone {
+    background-image: url("https://www.treasuredata.com/wp-content/uploads/imodal-integration-1.svg")
+}
+
+@media(min-width: 600px) {
+    .imodal .imodal-wrapper .imodal-hdrwrapper .imodal-label {
+        margin-top: 0
+    }
+}
+
+.imodal .imodal-wrapper .imodal-description p {
+    margin: 18px 0;
+    font: normal 16px/24px "Open Sans", "Roboto", "Helvetica", Arial, sans-serif
+}
+
+.imodal .imodal-wrapper .imodal-ctawrapper {
+    margin-top: 36px
+}
+
+/* .imodal .imodal-wrapper .imodal-ctawrapper .imodal-cta {
+    margin: 18px 0 0;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #00b3ff;
+    border-radius: 9px;
+    font: 500 16px/30px "Roboto", "Open Sans", "Helvetica", Arial, sans-serif;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 300ms ease-out
+} */
+
+.imodal .imodal-wrapper .imodal-ctawrapper .imodal-cta:hover,
+.imodal .imodal-wrapper .imodal-ctawrapper .imodal-cta:active,
+.imodal .imodal-wrapper .imodal-ctawrapper .imodal-cta:focus {
+    color: #fff;
+    background-color: #1141f1;
+    text-decoration: none
+}
+
+.image, .imodal-closebtn {
+    cursor: pointer;
+}
+
+
+.logo-icon {
+    width: 70px;
+    height: 70px;
+}
+
+
+.style-light a:not(.btn-text-skin):hover, .style-light a:not(.btn-text-skin):focus, .style-light a:not(.btn-text-skin):active {
+    color: #fff!important;
+}

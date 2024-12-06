@@ -1,0 +1,100 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "td/table-cell",
+  "version": "0.1.0",
+  "title": "Table Cell",
+  "category": "text",
+  "icon": "id",
+  "description": "A container for table cells.",
+  "attributes": {
+    "colorVariant": {
+      "type": "string",
+      "default": "DARK"
+    },
+    "layout": {
+      "type": "string",
+      "default": "colored"
+    },
+    "vSplit": {
+      "type": "string",
+      "default": "50/50"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Heading Text"
+    },
+    "displayTitleOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayTitleOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayTitleOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "subheading": {
+      "type": "string",
+      "default": "Subheading Text"
+    },
+    "displaySubheadOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "displaySubheadOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "displaySubheadOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Get a demo"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "displayCTAOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayCTAOnTablet": {
+      "type": "boolean",
+      "default": true
+    },
+    "dispalyCTAOnDesktop": {
+      "type": "boolean",
+      "default": true
+    },
+    "tableNumColumns": {
+      "type": "number",
+      "default": 3
+    },
+    "tableNumRows": {
+      "type": "number",
+      "default": 3
+    },
+    "tableHeader": {
+      "type": "string",
+      "default": ""
+    },
+    "displayHeaders": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "example": {},
+  "parent": [
+    "td/table-row"
+  ],
+  "textdomain": "table-container",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
